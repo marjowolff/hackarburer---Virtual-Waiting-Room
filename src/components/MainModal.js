@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Chatbot from './Chatbot';
 import Counter from './Counter'
 import Office from './Office';
 import PatientList from './PatientList';
@@ -28,8 +28,11 @@ const MainModal = ({patients, timeAppointement}) => {
         
       </div>
       </div>
+      <div className="MainModal__chatbot">
+        <Chatbot />
+      </div>
     </div>
-  );
+  )
 }
 
 export default MainModal;
