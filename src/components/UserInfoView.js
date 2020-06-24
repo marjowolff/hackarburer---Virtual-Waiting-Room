@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-/* import './UserInfoView.css' */
+import './UserInfoView.css'
 
 const UserInfoView = props => {
   const [number, setNumber] = useState('+33 7 44 66 88 99')
