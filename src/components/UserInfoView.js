@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import './UserInfoView.css'
+/* import './UserInfoView.css' */
 
 const UserInfoView = props => {
   const [number, setNumber] = useState('+33744668899')
@@ -38,6 +38,5 @@ const UserInfoView = props => {
     </div>
   )
 }
-
 
 export default UserInfoView

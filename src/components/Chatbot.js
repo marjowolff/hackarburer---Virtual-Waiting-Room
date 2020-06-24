@@ -1,14 +1,7 @@
-<<<<<<< HEAD
-import React, { useState, useEffect, useRef } from 'react'
-import { ThemeProvider } from 'styled-components'
-import ChatBot from 'react-simple-chatbot'
-import Review from './Review'
-=======
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
 import ChatBot from 'react-simple-chatbot'
 import UserInfoView from './UserInfoView'
->>>>>>> dev
 
 const patientName = 'Titi'
 const doctorName = 'Dr.Stranger'
@@ -161,7 +154,7 @@ const steps = [
     message: 'Still here? Now, let\'s answer some preliminary questions',
     trigger: '5'
   },
-/*   {
+  /*   {
     id: '11',
     message: 'Still here? Now, let\'s answer quickly review your personal information',
     trigger: '5'
