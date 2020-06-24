@@ -10,11 +10,17 @@
 }
 
 .MainModal_title {
-    background-color: var(--main-blue);
+    background-color: var(--dark-grey);
     color: #fff;
     padding: 20px;
     display: flex;
     align-items: center;
+}
+
+.MainModal_title_left {
+    display: flex;
+    align-items: center;
+    width: 70%;
 }
 
 .MainModal_title h2 {
@@ -25,6 +31,30 @@
 
 .MainModal_title img {
     width: 50px;
+}
+
+.MainModal_title_right {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.MainModal_title button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: var(--main-yellow);
+    font-size: 20px;
+    transition: .15s ease-in;
+}
+
+.MainModal_title button:hover {
+    cursor: pointer;
+    background-color: #94740a;
+    color: #fff;
+    font-weight: bold;
+    transform: scale(1.1)
+
 }
 
 .MainModal_container {
