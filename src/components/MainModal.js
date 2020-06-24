@@ -19,9 +19,13 @@ const MainModal = ({patients}) => {
         </div>
       </div>
       <div className='MainModal_container'>
-      <Counter />
-      <PatientList patients={patients}/>
-      <Office />
+        <div className='MainModal_container_left'>
+          <Counter patients={patients}/>
+          <PatientList patients={patients}/>
+      </div>
+      <div className='MainModal_container_right'>
+        <Office />
+      </div>
       </div>
     </div>
   );

@@ -61,4 +61,14 @@
     background-color: #fff;
     height: 600px;
     padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.MainModal_container_left {
+    width: 40%;
+}
+
+.MainModal_container_right {
+    width: 50%;
 }

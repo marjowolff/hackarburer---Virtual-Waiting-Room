@@ -23,9 +23,6 @@ const Office = () => {
       </div>
       <div className='Office__patient'>
         <img className='Office__avatar' src='https://via.placeholder.com/60'  alt='patient avatar' />
-        <div className='Office__patient__info'>
-          <h2>Anomynous</h2>
-        </div>
       </div>
     </div>
   )

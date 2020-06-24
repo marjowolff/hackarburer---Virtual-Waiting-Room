@@ -1,9 +1,7 @@
 .Office {
-  min-width: fit-content;
-  width: 30vw;
   border: 2px solid var(--main-blue);
   border-radius: 10px;
-  height: 250px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -21,13 +19,12 @@
   width: 70px;
 }
 
-.Office__doctor, .Office__patient {
+.Office__doctor {
   display: flex;
   align-items: center;
-  line-height: 0.5em;
 }
 
-.Office__doctor__info h2, .Office__patient__info h2 {
+.Office__doctor__info h2 {
   font-size: 1.3em;
 }
 
