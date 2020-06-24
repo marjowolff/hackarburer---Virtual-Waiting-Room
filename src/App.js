@@ -32,7 +32,7 @@ const App = () => {
   const [patients, setPatients] = useState(initialPatientsData)
   const [timeAppointement, setTimeAppointement] = useState(0)
 
-  useEffect(() => {setInterval(() => {setTimeAppointement(timeAppointement + 1)}, 6000)}, [timeAppointement])
+  useEffect(() => {setInterval(() => {setTimeAppointement(timeAppointement + 1)}, 60000)}, [timeAppointement])
 
   return (
     <div className="App">
