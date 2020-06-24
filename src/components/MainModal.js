@@ -25,11 +25,9 @@ const MainModal = ({patients, timeAppointement}) => {
       </div>
       <div className='MainModal_container_right'>
         <Counter patients={patients}/>
+        <Chatbot />
         
       </div>
-      </div>
-      <div className="MainModal__chatbot">
-        <Chatbot />
       </div>
     </div>
   )
