@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Counter from './Counter'
+
 import './MainModal.css'
 
 const MainModal = () => {
@@ -15,6 +17,8 @@ const MainModal = () => {
         </div>
       </div>
       <div className='MainModal_container'>
+      <Counter />
+      <input type=''/>
       </div>
     </div>
   );

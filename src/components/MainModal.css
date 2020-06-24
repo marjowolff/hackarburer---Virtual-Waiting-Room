@@ -59,5 +59,6 @@
 
 .MainModal_container {
     background-color: #fff;
-    height: 650px;
+    height: 600px;
+    padding: 15px;
 }
