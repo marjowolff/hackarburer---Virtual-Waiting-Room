@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './UserInfoView.css'
 
 const UserInfoView = props => {
-  const [number, setNumber] = useState('+33744668899')
+  const [number, setNumber] = useState('+33 7 44 66 88 99')
   const [address, setAddress] = useState('2 downtown street, Mytown')
   const [birthday, setBirthday] = useState('2000.01.01')
 
@@ -24,7 +24,7 @@ const UserInfoView = props => {
 
   return (
     <div className='UserInfoView'>
-      <h3 className='UserInfoView__title'>Summary</h3>
+      <h3 className='UserInfoView__title'>My Info</h3>
       <div className='UserInfoView__details'>
         <p className='UserInfoView__field'>Phone</p>
         <p className='UserInfoView__value'>{number}</p>
