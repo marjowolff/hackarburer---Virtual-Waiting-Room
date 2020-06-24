@@ -1,8 +1,26 @@
+@font-face {
+  font-family : "Montserrat";
+  src : url('./Fonts/Montserrat/Montserrat-Regular.ttf')
+}
+
+@font-face {
+  font-family : "Roboto";
+  src : url('./Fonts/Roboto/Roboto-Regular.ttf')
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding : 0;
+  --main-blue : #0596DE;
+  --hover-blue : #39ABE5;
+  --light-blue : #03B8E0;
+  --main-grey : #A7B4BC;
+  --dark-grey : #435F71;
+  --light-grey : #EEF2F6;
+  --main-orange : #FF7E00;
+  --main-yellow : #FDC400;
+
+  font-family: 'Roboto';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,3 +29,5 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* color : var(--main-blue) */
