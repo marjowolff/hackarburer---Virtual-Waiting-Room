@@ -19,13 +19,13 @@ const initialPatientsData = [
   },
   {
     id:3,
-    name: 'You',
-    status:'you'
+    name: 'Patient C',
+    status:'other'
   },
   {
     id:4,
-    name: 'Patient D',
-    status:'other'
+    name: 'You',
+    status:'you'
   },
   {
     id:5,
@@ -53,25 +53,35 @@ const App = () => {
   const [patients, setPatients] = useState(initialPatientsData)
   const [timeAppointement, setTimeAppointement] = useState(0)
   const [docInterface, setDocInterface] = useState(false)
+  const [timeAnim, setTimeAnim] = useState(false)
 
   const handleClick = () => {
     //remove patient #1
     const tempPatients = [...patients].slice(1)
     setPatients(tempPatients)
-    //every id -1
+    //setTimeAppointement to 0
+    setTimeAppointement(0)
   }
 
   const showDocInterface = () => {
     setDocInterface(true)
   }
 
-  useEffect(() => {setInterval(() => {setTimeAppointement(timeAppointement + 1)}, 60000)}, [timeAppointement])
+  useEffect(() => {
+    let interval = null;
+    interval = setInterval(() => {
+      setTimeAppointement(timeAppointement => timeAppointement + 1)
+      setTimeAnim(true)
+      setTimeout(()=> setTimeAnim(false), 2000)
+      }, 3000);
+    return () => clearInterval(interval);
+  }, [timeAppointement]);
 
   return (
     <div className="App">
       <Navbar />
       <div className='App__container'>
-        <MainModal patients={patients} timeAppointement={timeAppointement} showDoc={showDocInterface}/>
+        <MainModal patients={patients} timeAppointement={timeAppointement} timeAnim={timeAnim} showDoc={showDocInterface}/>
         <DocInterface patients={patients} newPatient={handleClick} docInterface={docInterface} />
       </div>
     </div>

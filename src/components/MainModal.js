@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-
 import Chatbot from './Chatbot';
+import ChatbotWelcomeMessage from './ChatbotWelcomeMessage'
 import Counter from './Counter'
 import Leaving from './Leaving';
 import Office from './Office';
@@ -8,9 +8,12 @@ import PatientList from './PatientList';
 
 import './MainModal.css'
 
-const MainModal = ({patients, timeAppointement, showDoc}) => {
+const MainModal = ({ patients, timeAppointement, timeAnim, showDoc }) => {
+  const [displayChatbot, setDisplayChatbot] = useState(false)
   const[leaving, setLeaving] = useState(false)
-
+  
+  const handleDisplayChatbot = () => setDisplayChatbot(true)
+  
   const showModal = () => {
     setLeaving(true)
   }
@@ -33,18 +36,16 @@ const MainModal = ({patients, timeAppointement, showDoc}) => {
       <div className='MainModal__container'>
         <div className='MainModal__container__left'>
           <Office timeAppointement={timeAppointement} patient={patients[0]} />
-          <PatientList patients={patients}/>
-      </div>
-      <div className='MainModal__container__right'>
-        <Counter patients={patients}/>
-        <div className="MainModal__chatbot">
-        <Chatbot />
+          <PatientList patients={patients} />
         </div>
-      </div>
+        <div className='MainModal_container_right'>
+          <Counter patients={patients} timeAppointement={timeAppointement} timeAnim={timeAnim} />
+          {displayChatbot ? <Chatbot /> : <ChatbotWelcomeMessage handleDisplayChatbot={handleDisplayChatbot} />}
+        </div>
       </div>
       <Leaving leaving={leaving} hide={hideModal}/>
     </div>
   )
 }
 
-export default MainModal;
+export default MainModal

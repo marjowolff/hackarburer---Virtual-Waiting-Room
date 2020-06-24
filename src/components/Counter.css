@@ -33,3 +33,27 @@
   font-size: 1.3vw;
   font-weight: bold;
 }
+
+.time-animation {
+  animation: timeChange 1000ms ease-in-out;
+  /* animation-fill-mode: forwards; */
+}
+
+@keyframes timeChange {
+  0% {
+    transform: scale(1)
+  }
+  20% {
+    color: var(--main-yellow)
+  }
+  50% {
+    transform: scale(1.4);
+    color: var(--main-yellow)
+  }
+  80% {
+    olor: var(--main-yellow)
+  }
+  100% {
+    transform: scale(1)
+  }
+}
