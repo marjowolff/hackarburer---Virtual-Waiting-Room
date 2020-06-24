@@ -1,10 +1,11 @@
 import React from 'react';
 
 import Counter from './Counter'
+import PatientList from './PatientList';
 
 import './MainModal.css'
 
-const MainModal = () => {
+const MainModal = ({patients}) => {
   return (
     <div className="MainModal">
       <div className="MainModal_title">
@@ -18,7 +19,7 @@ const MainModal = () => {
       </div>
       <div className='MainModal_container'>
       <Counter />
-      <input type=''/>
+      <PatientList patients={patients}/>
       </div>
     </div>
   );

@@ -1,0 +1,17 @@
+.Patient {
+  padding:10px;
+  display:flex ;
+  flex-direction : row;
+  border-radius: 10px;
+  border: 1px solid var(--main-grey);
+  background-color :  var(--light-grey)
+}
+
+.Patient__Name {
+  margin:10px;
+}
+
+.Patient__Name__You {
+  color : var(--main-orange);
+  font-weight : bold;
+}
