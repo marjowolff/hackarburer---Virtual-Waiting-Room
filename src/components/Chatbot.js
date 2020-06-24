@@ -111,6 +111,7 @@ const steps = [
   {
     id: '5',
     message: 'Do you have any allergies?',
+    delay: 3500,
     trigger: 'allergy'
   },
   {
@@ -152,13 +153,9 @@ const steps = [
   {
     id: '10',
     message: 'Still here? Now, let\'s answer some preliminary questions',
+    delay: 4000,
     trigger: '5'
   },
-  /*   {
-    id: '11',
-    message: 'Still here? Now, let\'s answer quickly review your personal information',
-    trigger: '5'
-  }, */
   {
     id: '9',
     message: 'Bye!',
