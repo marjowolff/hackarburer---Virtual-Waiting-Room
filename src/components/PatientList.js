@@ -8,7 +8,7 @@ const PatientList = ({patients}) => {
       return (<div className = "PatientList">
       <FlipMove>
       {
-          patients.map(patient => 
+          patients.filter((patient,index) => (index>0 && index<5)).map(patient => 
           <div key={patient.id}><Patient name={patient.name} status={patient.status}/>
           </div>)
          }  

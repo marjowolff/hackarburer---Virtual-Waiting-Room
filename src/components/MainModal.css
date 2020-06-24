@@ -5,7 +5,7 @@
 }
 
 .MainModal {
-    width: 70%;
+    width: 55%;
     box-shadow: 1px 5px 3px 2px grey;
 }
 
@@ -20,7 +20,7 @@
 .MainModal__title__left {
     display: flex;
     align-items: center;
-    width: 70%;
+    width: 50%;
 }
 
 .MainModal__title h2 {
@@ -34,7 +34,7 @@
 }
 
 .MainModal__title__right {
-    width: 30%;
+    width: 50%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -63,4 +63,14 @@
     background-color: #fff;
     height: 600px;
     padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.MainModal_container_left {
+    width: 40%;
+}
+
+.MainModal_container_right {
+    width: 50%;
 }
