@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Counter from './Counter'
+import Office from './Office';
 import PatientList from './PatientList';
 
 import './MainModal.css'
@@ -20,6 +21,7 @@ const MainModal = ({patients}) => {
       <div className='MainModal_container'>
       <Counter />
       <PatientList patients={patients}/>
+      <Office />
       </div>
     </div>
   );
