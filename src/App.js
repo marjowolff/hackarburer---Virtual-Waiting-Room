@@ -1,10 +1,14 @@
 import React from 'react';
-import './App.css';
+
 import MainModal from './components/MainModal';
+import Navbar from './components/Navbar';
+
+import './App.css';
 
 const App = () => {
   return (
     <div className="App">
+      <Navbar />
       <MainModal />
     </div>
   );
