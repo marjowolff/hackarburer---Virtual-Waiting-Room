@@ -55,3 +55,16 @@
 .Office__patient__info {
   margin:10px;
 }
+
+.Office__patient__animation {
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  /* transform: scale(1.5);
+  animation-duration : 10s; */
+}
+@keyframes example {
+  0%   {background-color:var(--light-grey); left:0px; top:0px;}
+  50%  {background-color:var(--main-yellow); left:200px; top:200px;}
+  100% {background-color:var(--light-grey); left:0px; top:0px;}
+}

@@ -3,7 +3,7 @@ import React from 'react'
 import './Office.css'
 import Patient from './Patient'
 
-const Office = ({ patient,timeAppointement }) => {
+const Office = ({ patient,timeAppointement,anim }) => {
   return (
     <div className='Office'>
       <p className='Office__anoucement'>Appointement has started {timeAppointement} minutes ago </p>
@@ -14,7 +14,7 @@ const Office = ({ patient,timeAppointement }) => {
           <p>General practitioner</p>
         </div>
       </div>
-      <div className='Office__patient'>
+      <div className= {anim===true ? 'Office__patient Office__patient__animation' : 'Office__patient'}>
         <img className='Office__avatar' src='https://via.placeholder.com/60'  alt='patient avatar' />
         <div className='Office__patient__info'>
         {patient.name}
