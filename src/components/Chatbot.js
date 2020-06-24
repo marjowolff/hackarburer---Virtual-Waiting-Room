@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { ThemeProvider } from 'styled-components';
-import ChatBot from 'react-simple-chatbot';
+import React from 'react'
+import { ThemeProvider } from 'styled-components'
+import ChatBot from 'react-simple-chatbot'
 import Review from './Review'
 
 

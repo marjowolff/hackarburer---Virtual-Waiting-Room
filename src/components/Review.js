@@ -1,21 +1,19 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Review = props => {
   const [number, setNumber] = useState('+33744668899')
   const [address, setAddress] = useState('2 downtown street, Mytown')
   const [birthday, setBirthday] = useState('you@email.com')
-  
-  const isInitialMount = useRef(true)
+
   useEffect(() => {
-    if (isInitialMount.current) {
-      isInitialMount.current = false
-    } else {
-      // Your useEffect code here to be run on update
-      const { steps } = props
-      const { number, address, birthday } = steps
-      setNumber(number)
-      setAddress(address)
-      setBirthday(birthday)
+    if (props.steps.number !== undefined) {
+      setNumber(props.steps.number.value)
+    }
+    if (props.steps.address !== undefined) {
+      setAddress(props.steps.address.value)
+    }
+    if (props.steps.birthday !== undefined) {
+      setBirthday(props.steps.birthday.value)
     }
   }, [])
 
