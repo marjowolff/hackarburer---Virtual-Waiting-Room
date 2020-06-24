@@ -5,7 +5,7 @@ import Time from '../images/clock.png'
 
 import './Counter.css'
 
-const Counter = ({patients}) => {
+const Counter = ({patients, timeAppointement, timeAnim}) => {
   const [time, setTime] = useState(15)
 
   const idMe = patients.findIndex(patient => patient.status === 'you')
@@ -24,7 +24,7 @@ const Counter = ({patients}) => {
         <p className='Counter__title'>Estimated waiting time</p>
         <div className='Counter__info'>
           <img src={Time} alt='Clock'/>
-          <p>{time * nbrBefore}'</p>
+          <p className={`Counter__info__time ${timeAnim ? 'time-animation' : ''}`}>{time * nbrBefore - timeAppointement}'</p>
         </div>
       </div>
     </div>

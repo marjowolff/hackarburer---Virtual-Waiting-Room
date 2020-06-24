@@ -7,9 +7,9 @@ import PatientList from './PatientList'
 import './MainModal.css'
 import ChatbotWelcomeMessage from './ChatbotWelcomeMessage'
 
-const MainModal = ({ patients, timeAppointement }) => {
+const MainModal = ({ patients, timeAppointement, timeAnim }) => {
   const [displayChatbot, setDisplayChatbot] = useState(false)
-  
+
   const handleDisplayChatbot = () => setDisplayChatbot(true)
 
   return (
@@ -29,7 +29,7 @@ const MainModal = ({ patients, timeAppointement }) => {
           <PatientList patients={patients} />
         </div>
         <div className='MainModal_container_right'>
-          <Counter patients={patients} />
+          <Counter patients={patients} timeAppointement={timeAppointement} timeAnim={timeAnim} />
           {displayChatbot ? <Chatbot /> : <ChatbotWelcomeMessage handleDisplayChatbot={handleDisplayChatbot} />}
         </div>
       </div>
