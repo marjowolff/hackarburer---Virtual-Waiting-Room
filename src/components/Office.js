@@ -1,7 +1,6 @@
 import React from 'react'
 
 import './Office.css'
-import Patient from './Patient'
 
 const Office = ({ patient, timeAppointement }) => {
   return (
@@ -15,9 +14,9 @@ const Office = ({ patient, timeAppointement }) => {
         </div>
       </div>
       <div className='Office__patient'>
-        <img className='Office__avatar' src='https://via.placeholder.com/60'  alt='patient avatar' />
+        <img className='Office__avatar' src='https://via.placeholder.com/60' alt='patient avatar' />
         <div className='Office__patient__info'>
-        {patient.name}
+          {patient.name}
         </div>
       </div>
     </div>

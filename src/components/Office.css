@@ -1,7 +1,7 @@
 .Office {
   border: 2px solid var(--main-blue);
   border-radius: 10px;
-  height: 200px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

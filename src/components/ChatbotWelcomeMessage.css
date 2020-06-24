@@ -1,0 +1,27 @@
+.ChatbotWelcomeMessage {
+  display: flex;
+  flex-direction: column;
+}
+
+.ChatbotWelcomeMessage__message {
+  background-color: var(--main-orange);
+  color: white;
+  border-radius: 10px 10px 0px 10px;
+  align-self: flex-start;
+  width:85%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 4%;
+}
+
+.ChatbotWelcomeMessage__validationButton {
+  width: 20%
+}
+
+.ChatbotWelcomeMessage__avatar {
+  align-self: flex-end;
+  width:15%
+}

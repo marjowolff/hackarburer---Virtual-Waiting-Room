@@ -7,6 +7,9 @@
 .MainModal {
     width: 70%;
     box-shadow: 1px 5px 3px 2px grey;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .MainModal_title {
