@@ -1,12 +1,31 @@
 import React from 'react';
 import Chatbot from './Chatbot';
+import Counter from './Counter'
+import Office from './Office';
+import PatientList from './PatientList';
 
-const MainModal = () => {
+import './MainModal.css'
 
+const MainModal = ({patients, timeAppointement}) => {
   return (
     <div className="MainModal">
-      <div className="MainModal__title">
-        Mon titre
+      <div className="MainModal_title">
+        <div className='MainModal_title_left'>
+          <img src={require('../images/logo.png')} alt='waiting_room_logo'/>
+          <h2>Virtual Waiting Room</h2>
+        </div>
+        <div className='MainModal_title_right'>
+          <button>Leave</button>
+        </div>
+      </div>
+      <div className='MainModal_container'>
+        <div className='MainModal_container_left'>
+          <Counter patients={patients}/>
+          <PatientList patients={patients}/>
+      </div>
+      <div className='MainModal_container_right'>
+        <Office timeAppointement={timeAppointement} />
+      </div>
       </div>
       <div className="MainModal__chatbot">
         <Chatbot />

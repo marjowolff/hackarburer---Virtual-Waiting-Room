@@ -1,0 +1,42 @@
+.Office {
+  border: 2px solid var(--main-blue);
+  border-radius: 10px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Office__anoucement {
+  margin: 0 10px 0 10px;
+  font-size: 1.2em;
+  font-style: italic;
+  color: var(--main-grey)
+}
+
+.Office__avatar {
+  width: 70px;
+}
+
+.Office__doctor {
+  display: flex;
+  align-items: center;
+}
+
+.Office__doctor__info h2 {
+  font-size: 1.3em;
+}
+
+.Office__doctor__info h2 {
+  color: var(--main-blue);
+}
+
+.Office__doctor__info p {
+  font-size: 1em;
+  font-style: italic;
+}
+
+.Office__doctor img, .Office__patient img {
+  margin-right: 1vw;
+}

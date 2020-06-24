@@ -1,0 +1,17 @@
+.Navbar {
+    width: 100%;
+    background-color: var(--main-blue);
+    margin-bottom: 75px;
+    padding: 10px;
+}
+
+.Navbar img {
+    width: 110px;
+}
+
+.Navbar p {
+    float: right;
+    margin-top: 10px;
+    color: #fff;
+
+}

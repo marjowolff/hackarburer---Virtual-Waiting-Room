@@ -1,0 +1,7 @@
+.App {
+    background-color: var(--main-grey);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
