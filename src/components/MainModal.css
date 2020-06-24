@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.MainModal {
+    width: 70%;
+    box-shadow: 1px 5px 3px 2px grey;
+}
+
+.MainModal_title {
+    background-color: var(--main-blue);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.MainModal_title h2 {
+    font-family: Montserrat;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.MainModal_title img {
+    width: 50px;
+}
+
+.MainModal_container {
+    background-color: #fff;
+    height: 650px;
+}
