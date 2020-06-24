@@ -18,13 +18,13 @@ const initialPatientsData = [
   },
   {
     id:3,
-    name: 'You',
-    status:'you'
+    name: 'Patient C',
+    status:'other'
   },
   {
     id:4,
-    name: 'Patient D',
-    status:'other'
+    name: 'You',
+    status:'you'
   },
   {
     id:5,
@@ -56,12 +56,11 @@ const App = () => {
     //remove patient #1
     const tempPatients = [...patients].slice(1)
     setPatients(tempPatients)
-    //every id -1
-
+    //setTimeAppointement to 0
 
   }
 
-  useEffect(() => {setInterval(() => {setTimeAppointement(timeAppointement + 1)}, 60000)}, [timeAppointement])
+  useEffect(() => {setInterval(() => {setTimeAppointement(timeAppointement + 1)}, 3000)}, [timeAppointement])
 
   return (
     <div className="App">
