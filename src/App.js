@@ -57,10 +57,16 @@ const App = () => {
     const tempPatients = [...patients].slice(1)
     setPatients(tempPatients)
     //setTimeAppointement to 0
-
+    setTimeAppointement(0)
   }
 
-  useEffect(() => {setInterval(() => {setTimeAppointement(timeAppointement + 1)}, 3000)}, [timeAppointement])
+  useEffect(() => {
+    let interval = null;
+    interval = setInterval(() => {
+      setTimeAppointement(timeAppointement => timeAppointement + 1);
+      }, 60000);
+    return () => clearInterval(interval);
+  }, [timeAppointement]);
 
   return (
     <div className="App">
