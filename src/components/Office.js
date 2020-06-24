@@ -3,7 +3,7 @@ import React from 'react'
 import './Office.css'
 import Patient from './Patient'
 
-const Office = ({ patient,timeAppointement }) => {
+const Office = ({ patient, timeAppointement }) => {
   return (
     <div className='Office'>
       <p className='Office__anoucement'>Appointement has started {timeAppointement} minutes ago </p>

@@ -1,8 +1,11 @@
 import React from 'react'
 
-const ChatbotWelcomeMessage = () => {
+const ChatbotWelcomeMessage = ({ handleDisplayChatbot }) => {
   return (
-    <div>hello</div>
+    <div>
+      hello
+      <button onClick={handleDisplayChatbot}>Ok</button>
+    </div>
   )
 }
 
