@@ -1,7 +1,7 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
 import ChatBot from 'react-simple-chatbot'
-import Review from './Review'
+import UserInfoView from './UserInfoView'
 
 
 const steps = [
@@ -35,7 +35,7 @@ const steps = [
   },
   {
     id: 'review',
-    component: <Review />,
+    component: <UserInfoView />,
     asMessage: true,
     trigger: 'update',
   },
