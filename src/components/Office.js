@@ -17,7 +17,7 @@ const Office = ({ patient,timeAppointement }) => {
       <div className='Office__patient'>
         <img className='Office__avatar' src='https://via.placeholder.com/60'  alt='patient avatar' />
         <div className='Office__patient__info'>
-          <h2>{patient.name}</h2>
+        {patient.name}
         </div>
       </div>
     </div>

@@ -40,3 +40,18 @@
 .Office__doctor img, .Office__patient img {
   margin-right: 1vw;
 }
+
+.Office__patient {
+  width:90%;
+  padding:10px;
+  margin:5px;
+  display:flex ;
+  flex-direction : row;
+  border-radius: 10px;
+  border: 1px solid var(--main-grey);
+  background-color :  var(--light-grey)
+}
+
+.Office__patient__info {
+  margin:10px;
+}
