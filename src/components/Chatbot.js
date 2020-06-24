@@ -11,25 +11,30 @@ import Review from './Review'
 const steps = [
   {
     id: '0',
-    message: `Hello -client-, I'm here to help you !`,
+    message: `Hello -client-, I'm here to help you ! This is your first visit to -Dr.Stranger-. I'm so happy to have you here`,
     trigger: '1',
   },
   {
     id: '1',
-    message: 'What do you want to do to occupy your time?',
+    message: `While you wait, why not take some time to provide some information?`,
     trigger: '2',
   },
   {
     id: '2',
     options: [
-      { value: 1, label: '1 Confirm your Personal information', trigger: '3' },
-      { value: 2, label: '2 Symptoms', trigger: '4' },
-      { value: 3, label: '3 Read', trigger: '8' },
+      { value: 1, label: '1 Confirm your Personal information', trigger: '4' },
+      { value: 2, label: '2 Preliminary questions', trigger: '5' },
+      // { value: 3, label: '3 Read', trigger: '8' },
     ],
   },
   {
     id: '3',
-    message: 'Check your personal information',
+    message: 'Your information is successfully updated',
+    trigger: '4',
+  },
+  {
+    id: '4',
+    message: 'Confirm your personal information',
     trigger: 'review',
   },
   {
@@ -64,71 +69,83 @@ const steps = [
     ],
   },
   {
-    id: 'number',
-    message: 'What is your phone number?',
-    user: true,
-    trigger: '3',
+    id: 'update-number',
+    message: 'What is your updated phone number?',
+    trigger: 'number',
   },
   {
-    id: 'update-number',
-    update: 'number',
+    id: 'number',
+    user: true,
     trigger: '3',
   },
   {
     id: 'update-address',
-    message: 'How old are you?',
-    update: 'address',
-    trigger: '3',
+    message: 'What is your updated address?',
+    trigger: 'address',
   },
-
+  {
+    id: 'address',
+    user: true,
+    trigger: '4',
+  },
   {
     id: 'update-birthday',
-    message: 'How old are you?',
-    update: 'birthday',
-    trigger: '3',
+    message: 'What is your updated birthday?',
+    trigger: 'birthday',
+  },
+  {
+    id: 'birthday',
+    user: true,
+    trigger: '4',
   },
   {
     id: 'personal-info-end-message',
     message: 'Thanks! Your data was submitted successfully!',
-    trigger: 1,
-  },
-  {
-    id: '4',
-    message: 'Are you allergic to anything? something?',
-    trigger: 'symptom'
-  },
-  {
-    id: 'symptom',
-    user: true,
-    trigger: '5',
+    trigger: 2,
   },
   {
     id: '5',
-    message: 'Do you smoke?',
-    trigger: 'duration'
+    message: 'Are you allergic to something?',
+    trigger: 'allergy'
   },
   {
-    id: 'duration',
-    user: true,
-    trigger: '6',
+    id: 'allergy',
+    options: [
+      { value: 'yes', label: 'Yes', trigger: '6' },
+      { value: 'no', label: 'No', trigger: '6' },
+    ]
   },
   {
     id: '6',
-    message: 'Does it intermittent or constant? If intermittent, how long does it last?',
-    trigger: 'frequency'
+    message: 'Do you smoke?',
+    trigger: 'smoke'
   },
   {
-    id: 'frequency',
-    user: true,
-    trigger: '7',
+    id: 'smoke',
+    options: [
+      { value: 'yes', label: 'Yes', trigger: '7' },
+      { value: 'no', label: 'No', trigger: '7' },
+    ]
   },
   {
     id: '7',
-    message: 'Thank you ! All your answers would be considered carefully by the doctor',
-    trigger: '8'
+    message: 'Are you taking any medications?',
+    trigger: 'medications'
+  },
+  {
+    id: 'medications',
+    options: [
+      { value: 'yes', label: 'Yes', trigger: '8' },
+      { value: 'no', label: 'No', trigger: '8' },
+    ]
   },
   {
     id: '8',
+    message: 'Thank you ! All your answers would be considered carefully by the doctor',
+    trigger: '9'
+  },
+  {
+    id: '9',
     message: 'Bye!',
     end: true,
   }

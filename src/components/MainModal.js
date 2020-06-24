@@ -12,7 +12,7 @@ const MainModal = () => {
         <Chatbot />
       </div>
     </div>
-  );
+  )
 }
 
 export default MainModal;
