@@ -37,12 +37,14 @@
     width: 30%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .MainModal_title button {
     border: none;
     border-radius: 5px;
     padding: 5px 10px;
+    margin-left: 10px;
     background-color: var(--main-yellow);
     font-size: 20px;
     transition: .15s ease-in;

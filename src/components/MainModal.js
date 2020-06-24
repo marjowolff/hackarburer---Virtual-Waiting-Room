@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Counter from './Counter'
 import PatientList from './PatientList';
@@ -6,6 +6,7 @@ import PatientList from './PatientList';
 import './MainModal.css'
 
 const MainModal = ({patients}) => {
+  const[leaving, setLeaving] = useState(false)
   return (
     <div className="MainModal">
       <div className="MainModal_title">
@@ -14,6 +15,7 @@ const MainModal = ({patients}) => {
           <h2>Virtual Waiting Room</h2>
         </div>
         <div className='MainModal_title_right'>
+          <p>Need to be somewhere else ?</p>
           <button>Leave</button>
         </div>
       </div>
