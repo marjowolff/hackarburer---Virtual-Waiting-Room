@@ -1,4 +1,5 @@
 import React from 'react';
+import PatientList from './PatientList';
 
 const MainModal = () => {
   return (
@@ -6,6 +7,7 @@ const MainModal = () => {
       <div className="MainModal__title">
         Mon titre
       </div>
+      <PatientList />
     </div>
   );
 }
