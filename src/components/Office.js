@@ -1,9 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import './Office.css'
 
 const Office = () => {
   const [timer, setTimer] = useState(0)
+
+  const clock = () => {
+    setInterval(() => {setTimer(timer + 1)}, 1000);
+  }
+
+  // useState(() => clock(), [])
 
   return (
     <div className='Office'>
