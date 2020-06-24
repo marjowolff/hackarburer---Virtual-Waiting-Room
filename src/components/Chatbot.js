@@ -3,10 +3,6 @@ import { ThemeProvider } from 'styled-components';
 import ChatBot from 'react-simple-chatbot';
 import Review from './Review'
 
-// const initialPersonalInfo = {
-//   userNumber: attend je suis encore en train de travailler dessus, j'attends de voir si ca marche avant de refactor OK!!
-// }
-
 
 const steps = [
   {
@@ -30,7 +26,7 @@ const steps = [
   {
     id: '3',
     message: 'Your information is successfully updated',
-    trigger: '4',
+    trigger: 'review',
   },
   {
     id: '4',
@@ -101,7 +97,7 @@ const steps = [
   {
     id: 'personal-info-end-message',
     message: 'Thanks! Your data was submitted successfully!',
-    trigger: 2,
+    trigger: '1',
   },
   {
     id: '5',
