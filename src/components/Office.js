@@ -1,19 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 
 import './Office.css'
 
-const Office = () => {
-  const [timer, setTimer] = useState(0)
-
-  const clock = () => {
-    setInterval(() => {setTimer(timer + 1)}, 1000);
-  }
-
-  // useState(() => clock(), [])
-
+const Office = ({ timeAppointement }) => {
   return (
     <div className='Office'>
-      <p className='Office__anoucement'>In consultation since {timer} minutes</p>
+      <p className='Office__anoucement'>Appointement has started {timeAppointement} minutes ago </p>
       <div className='Office__doctor'>
         <img className='Office__avatar' src='https://via.placeholder.com/60' alt='doctor avatar' />
         <div className='Office__doctor__info'>

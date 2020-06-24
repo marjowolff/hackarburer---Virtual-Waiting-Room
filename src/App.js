@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import MainModal from './components/MainModal';
 import Navbar from './components/Navbar';
@@ -30,11 +30,14 @@ const initialPatientsData = [
 
 const App = () => {
   const [patients, setPatients] = useState(initialPatientsData)
+  const [timeAppointement, setTimeAppointement] = useState(0)
+
+  useEffect(() => {setInterval(() => {setTimeAppointement(timeAppointement + 1)}, 6000)}, [timeAppointement])
 
   return (
     <div className="App">
       <Navbar />
-      <MainModal patients={patients} />
+      <MainModal patients={patients} timeAppointement={timeAppointement} />
       <button>Flip Move</button>
     </div>
   );
