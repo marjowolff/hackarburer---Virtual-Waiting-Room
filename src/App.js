@@ -4,6 +4,7 @@ import MainModal from './components/MainModal';
 import Navbar from './components/Navbar';
 
 import './App.css';
+import DocInterface from './components/DocInterface';
 
 const initialPatientsData = [
   {
@@ -66,8 +67,10 @@ const App = () => {
   return (
     <div className="App">
       <Navbar />
-      <MainModal patients={patients} timeAppointement={timeAppointement} />
-      <button onClick={handleClick}>Take a new patient</button>
+      <div className='App__container'>
+        <MainModal patients={patients} timeAppointement={timeAppointement} />
+        <DocInterface patients={patients} newPatient={handleClick} />
+      </div>
     </div>
   );
 }

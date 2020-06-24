@@ -1,0 +1,64 @@
+.DocInterface {
+    width: 25%;
+    box-shadow: 1px 5px 3px 2px grey;
+}
+
+.DocInterface__header {
+    background-color: var(--main-yellow);
+    padding: 15px;
+}
+
+.DocInterface__main {
+    background-color: #fff;
+    height: 300px;
+    display: flex;
+}
+
+.DocInterface__left {
+    width: 40%;
+    padding: 15px;
+    background-color: #f7e4a6;
+}
+
+.DocInterface__right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.DocInterface__next {
+    background: var(--light-blue);
+}
+
+.DocInterface__right input {
+    width: 35px;
+    margin: 0 3px;
+}
+
+.DocInterface__right button {
+    padding: 7px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    transition: .1s ease-in;
+    color: #fff;
+}
+.DocInterface__right button:hover {
+    cursor: pointer;
+    font-weight: bolder;
+    transform: scale(1.05);
+}
+
+.DocInterface__right__title {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.DocInterface__send {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--main-orange);
+}

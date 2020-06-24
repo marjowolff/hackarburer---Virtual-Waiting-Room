@@ -1,0 +1,7 @@
+.DocPatient {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: var(--dark-grey);
+    font-weight: bold;
+}
