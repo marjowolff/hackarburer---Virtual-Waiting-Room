@@ -1,4 +1,5 @@
 import React from 'react';
+import PatientList from './PatientList';
 
 import Counter from './Counter'
 
@@ -9,6 +10,7 @@ const MainModal = () => {
         Mon titre
       </div>
       <Counter />
+      <PatientList />
     </div>
   );
 }
