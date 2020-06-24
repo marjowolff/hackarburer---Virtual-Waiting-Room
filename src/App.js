@@ -51,6 +51,7 @@ const initialPatientsData = [
 const App = () => {
   const [patients, setPatients] = useState(initialPatientsData)
   const [timeAppointement, setTimeAppointement] = useState(0)
+  const [timeAnim, setTimeAnim] = useState(false)
 
   const handleClick = () => {
     //remove patient #1
@@ -63,15 +64,17 @@ const App = () => {
   useEffect(() => {
     let interval = null;
     interval = setInterval(() => {
-      setTimeAppointement(timeAppointement => timeAppointement + 1);
-      }, 60000);
+      setTimeAppointement(timeAppointement => timeAppointement + 1)
+      setTimeAnim(true)
+      setTimeout(()=> setTimeAnim(false), 2000)
+      }, 3000);
     return () => clearInterval(interval);
   }, [timeAppointement]);
 
   return (
     <div className="App">
       <Navbar />
-      <MainModal patients={patients} timeAppointement={timeAppointement} />
+      <MainModal patients={patients} timeAppointement={timeAppointement} timeAnim={timeAnim} />
       <button onClick={handleClick}>Take a new patient</button>
     </div>
   );

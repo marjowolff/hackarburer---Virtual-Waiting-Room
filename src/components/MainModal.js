@@ -6,7 +6,7 @@ import PatientList from './PatientList';
 
 import './MainModal.css'
 
-const MainModal = ({patients, timeAppointement}) => {
+const MainModal = ({patients, timeAppointement, timeAnim}) => {
   return (
     <div className="MainModal">
       <div className="MainModal_title">
@@ -24,7 +24,7 @@ const MainModal = ({patients, timeAppointement}) => {
           <PatientList patients={patients}/>
       </div>
       <div className='MainModal_container_right'>
-        <Counter patients={patients} timeAppointement={timeAppointement} />
+        <Counter patients={patients} timeAppointement={timeAppointement} timeAnim={timeAnim} />
         <Chatbot />
         
       </div>
