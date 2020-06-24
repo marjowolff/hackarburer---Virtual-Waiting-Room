@@ -22,14 +22,11 @@ const MainModal = ({patients, timeAppointement}) => {
         <div className='MainModal_container_left'>
           <Office timeAppointement={timeAppointement} patient={patients[0]} />
           <PatientList patients={patients}/>
-      </div>
-      <div className='MainModal_container_right'>
-        <Counter patients={patients}/>
-        
-      </div>
-      </div>
-      <div className="MainModal__chatbot">
-        <Chatbot />
+        </div>
+        <div className='MainModal_container_right'>
+          <Counter patients={patients}/>
+          <Chatbot />
+        </div>
       </div>
     </div>
   )
