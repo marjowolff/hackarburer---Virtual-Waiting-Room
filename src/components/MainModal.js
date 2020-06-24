@@ -8,7 +8,7 @@ import PatientList from './PatientList';
 
 import './MainModal.css'
 
-const MainModal = ({patients, timeAppointement}) => {
+const MainModal = ({patients, timeAppointement, showDoc}) => {
   const[leaving, setLeaving] = useState(false)
 
   const showModal = () => {
@@ -22,7 +22,7 @@ const MainModal = ({patients, timeAppointement}) => {
       <div className="MainModal__title">
         <div className='MainModal__title__left'>
           <img src={require('../images/logo.png')} alt='waiting_room_logo'/>
-          <h2>Virtual Waiting Room</h2>
+          <h2 onClick={showDoc}>Virtual Waiting Room</h2>
         </div>
         <div className='MainModal__title__right'>
           <p>Need to be somewhere else ?</p>

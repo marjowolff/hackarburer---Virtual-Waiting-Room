@@ -52,14 +52,17 @@ const initialPatientsData = [
 const App = () => {
   const [patients, setPatients] = useState(initialPatientsData)
   const [timeAppointement, setTimeAppointement] = useState(0)
+  const [docInterface, setDocInterface] = useState(false)
 
   const handleClick = () => {
     //remove patient #1
     const tempPatients = [...patients].slice(1)
     setPatients(tempPatients)
     //every id -1
+  }
 
-
+  const showDocInterface = () => {
+    setDocInterface(true)
   }
 
   useEffect(() => {setInterval(() => {setTimeAppointement(timeAppointement + 1)}, 60000)}, [timeAppointement])
@@ -68,8 +71,8 @@ const App = () => {
     <div className="App">
       <Navbar />
       <div className='App__container'>
-        <MainModal patients={patients} timeAppointement={timeAppointement} />
-        <DocInterface patients={patients} newPatient={handleClick} />
+        <MainModal patients={patients} timeAppointement={timeAppointement} showDoc={showDocInterface}/>
+        <DocInterface patients={patients} newPatient={handleClick} docInterface={docInterface} />
       </div>
     </div>
   );

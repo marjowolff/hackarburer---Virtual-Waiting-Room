@@ -5,9 +5,9 @@ import DocPatientList from './DocPatientList'
 
 import './DocInterface.css'
 
-const DocInterface = ({newPatient, patients}) => {
+const DocInterface = ({newPatient, patients, docInterface}) => {
     return (
-        <div className='DocInterface'>
+        <div className='DocInterface' style={ docInterface ? {display:'block'}:{display:'none'}}>
             <header className='DocInterface__header'>
                 <DocOfficePatient patient={patients[0]}/>
             </header>
