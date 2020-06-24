@@ -9,7 +9,7 @@
     box-shadow: 1px 5px 3px 2px grey;
 }
 
-.MainModal_title {
+.MainModal__title {
     background-color: var(--dark-grey);
     color: #fff;
     padding: 20px;
@@ -17,30 +17,30 @@
     align-items: center;
 }
 
-.MainModal_title_left {
+.MainModal__title__left {
     display: flex;
     align-items: center;
     width: 70%;
 }
 
-.MainModal_title h2 {
+.MainModal__title h2 {
     font-family: Montserrat;
     font-size: 30px;
     margin-left: 20px;
 }
 
-.MainModal_title img {
+.MainModal__title img {
     width: 50px;
 }
 
-.MainModal_title_right {
+.MainModal__title__right {
     width: 30%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.MainModal_title button {
+.MainModal__title button {
     border: none;
     border-radius: 5px;
     padding: 5px 10px;
@@ -50,7 +50,7 @@
     transition: .15s ease-in;
 }
 
-.MainModal_title button:hover {
+.MainModal__title button:hover {
     cursor: pointer;
     background-color: #94740a;
     color: #fff;
@@ -59,7 +59,7 @@
 
 }
 
-.MainModal_container {
+.MainModal__container {
     background-color: #fff;
     height: 600px;
     padding: 15px;
