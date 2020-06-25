@@ -2,7 +2,7 @@ import React from 'react'
 import UserInfoView from './UserInfoView'
 
 const patientName = 'Ann O\'Nyme'
-const doctorName = 'Dr James White'
+const doctorName = 'Dr Gregory House'
 
 export const steps = [
   {
