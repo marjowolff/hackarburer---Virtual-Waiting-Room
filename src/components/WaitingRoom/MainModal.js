@@ -20,7 +20,7 @@ const MainModal = ({ patients, timeAppointement, timeAnim, showDoc, time, nbrBef
   const showModal = () => setLeaving(true)
   const hideModal = () => setLeaving(false)
 
-  const botAvatarUrl = require('../../images/chatbot.svg')
+  const botAvatarUrl = require('../../images/chatbot.png')
   const userAvatarUrl = require('../../images/6.png')
 
   return (
