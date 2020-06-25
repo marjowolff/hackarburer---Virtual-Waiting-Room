@@ -42,5 +42,6 @@
 
 .ChatbotWelcomeMessage__avatar {
   align-self: flex-end;
-  width:15%
+  width:25%;
+  margin: 10px;
 }

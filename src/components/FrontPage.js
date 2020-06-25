@@ -38,7 +38,7 @@ const FrontPage = () => {
             </span>
           </button>
         </Link>
-        <img className='FrontPage__image' src='https://www.doctolib.fr/webpack/dbc7e3783faf0a118a3f116f8cd78059.svg' alt='Patient doctor illustration' />
+        <img className='FrontPage__image' src='/images/frontpage.svg' alt='Patient doctor illustration' />
       </div>
 
     </div >
