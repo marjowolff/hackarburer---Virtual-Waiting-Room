@@ -41,7 +41,6 @@ const VirtualWaitingRoom = () => {
     return () => clearInterval(interval);
   }, [timeAppointement]);
 
-  console.log(initialPatientsData)
   return (
     
     <div className='VirtualWaitingRoom'>

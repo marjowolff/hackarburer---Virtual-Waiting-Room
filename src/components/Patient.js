@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './Patient.css'
 import ReactPlayer from 'react-player/youtube'
+import myVideo from '../images/webcam.mov'
 
 
 
@@ -25,5 +26,5 @@ const Patient = (props) => {
     
   );
 }
-
+//
 export default Patient;

@@ -22,7 +22,8 @@ const initialPatientsData = [
   {
     id:4,
     name: 'Ann O\'Nyme',
-    status:'you'
+    status:'you',
+    pic:'images/6.png'
   },
   {
     id:5,
