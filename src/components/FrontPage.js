@@ -6,6 +6,7 @@ import './Office.css'
 const FrontPage = () => {
   return (
     <div className='FrontPage'>
+      
       <div className='FrontPage__card'>
         <div className='FrontPage__head'>
           <p>Your appointment</p>
@@ -26,7 +27,6 @@ const FrontPage = () => {
             <p>General practitioner</p>
           </div>
         </div>
-
       </div>
 
       <div className='FrontPage__card'>
@@ -34,7 +34,7 @@ const FrontPage = () => {
           <button className='FrontPage__enterbutton'>
             <span>
               <svg fill="currentColor" class="dl-margin-r" width="24px" height="24px" viewBox="0 0 24 24"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"></path></svg>
-              Enter to the virtual waiting room
+              Join the video consultation
             </span>
           </button>
         </Link>
