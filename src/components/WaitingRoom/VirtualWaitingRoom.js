@@ -27,7 +27,7 @@ const VirtualWaitingRoom = () => {
     setPatients(tempPatients)
     setTimeAppointement(0)
     setAnim(true)
-    setTimeout(() => setAnim(false), 3000)
+    setTimeout(() => setAnim(false), 20000)
   }
 
   const getValue = e => {
