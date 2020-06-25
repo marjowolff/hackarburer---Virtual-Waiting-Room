@@ -1,0 +1,94 @@
+.FrontPage {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.FrontPage__card {
+  position: relative;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  border-radius: 4px;
+  background: #fff;
+  transition: box-shadow 300ms;
+  text-decoration: none;
+  color: #435f71;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(67,95,113,0.08);
+  margin: 16px;
+}
+
+.FrontPage__head {
+  background: #0596de;
+  color: #fff;
+  padding: 10px;
+}
+
+.FrontPage__head p {  
+  margin-bottom: 10px;
+}
+
+.FrontPage__head span{
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  height: 100%;
+}
+
+.FrontPage__head span svg {
+  margin-right: 5px;
+}
+
+.FrontPage__head span svg:nth-child(2) {
+  margin: 0 5px 0 10px;
+}
+
+.FrontPage__doctor__info h3 {
+  font-size: 15px;
+  margin: 0;
+  word-break: break-word;
+  font-weight: bold;
+  line-height: 23px;
+}
+
+.FrontPage__card a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.FrontPage__enterbutton{
+  background-color: #0596de;
+  font-size: 14px;
+  color: #fff;
+  padding: 0 16px;
+  height: 40px;
+  border: 0;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: none;
+  text-transform: uppercase;
+  margin: 16px;
+  display: inline-block;
+  padding: 0 16px;
+  transition: opacity 500ms, color 200ms, background-color 200ms;
+  cursor: pointer;
+}
+
+.FrontPage__enterbutton span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  height: 100%;
+}
+.FrontPage__enterbutton span svg {
+  margin-right: 10px;
+}
+
+.FrontPage__image {
+  max-width: 100%;
+  padding: 16px;
+  vertical-align: middle;
+}
