@@ -12,13 +12,28 @@ const theme = {
   botBubbleColor: '#FF7E00',
   botFontColor: '#fff',
   userBubbleColor: '#fff',
-  userFontColor: '#4a4a4a',
+  userFontColor: '#FF7E00'
 }
 
 const Chatbot = ({ botAvatarUrl, userAvatarUrl }) => {
   return (
     <ThemeProvider theme={theme}>
-      <ChatBot steps={steps} botAvatar={botAvatarUrl} userAvatar={userAvatarUrl} height='400px' />
+      <ChatBot
+        steps={steps}
+        botAvatar={botAvatarUrl}
+        userAvatar={userAvatarUrl}
+        height='400px'
+        width='400px'
+        bubbleOptionStyle={{
+          color: 'var(--main-orange)',
+          background: 'white',
+          border: '2px solid var(--main-orange)'
+        }}
+        style={{
+          margin: '45px auto',
+          'z-index': '1'
+        }}
+      />
     </ThemeProvider>
   )
 }
