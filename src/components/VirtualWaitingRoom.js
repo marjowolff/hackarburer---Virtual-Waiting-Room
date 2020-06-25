@@ -62,7 +62,6 @@ const VirtualWaitingRoom = () => {
     }
   }, [nbrBefore])
 
-  console.log(initialPatientsData)
   return (
     
     <div className='VirtualWaitingRoom'>
