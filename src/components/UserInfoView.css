@@ -1,0 +1,17 @@
+.UserInfoView {
+  width: 100%;
+}
+
+.UserInfoView__title {
+  margin-bottom: 0.5em;
+}
+
+.UserInfoView__field {
+  margin: 0.2em 0 0.1em 0;
+  font-weight: bold;
+}
+
+.UserInfoView__value {
+  margin: 0.1em 0 0.5em 1.5em;
+  /* text-align: ; */
+}

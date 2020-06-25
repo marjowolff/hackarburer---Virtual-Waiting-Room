@@ -1,0 +1,20 @@
+.DocOfficePatient {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.DocOfficePatient h3 {
+    color: #91720c;
+    font-family: Montserrat;
+}
+
+.DocOfficePatient__current {
+    display: flex;
+    align-items: center;
+}
+.DocOfficePatient__current p {
+    margin-left: 10px;
+    color: #fff;
+    font-weight: bold;
+}

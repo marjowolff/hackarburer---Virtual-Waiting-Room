@@ -1,0 +1,63 @@
+
+.Leaving {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.Leaving__container {
+    background-color: var(--light-grey);
+    width: 30%;
+    margin: 15% auto;
+    padding: 2%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Leaving__container p {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.Leaving__container textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px ;
+    padding: 10px;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.Leaving__container__actions {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Leaving__container__actions button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    transition: .1s ease-in;
+}
+
+.Leaving__container__actions button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    font-weight: bolder;
+}
+
+#LCA-leave {
+    background-color: var(--dark-grey);
+}
+#LCA-stay {
+    background-color: var(--main-orange);
+}

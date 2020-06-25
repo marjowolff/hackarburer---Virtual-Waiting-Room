@@ -4,6 +4,7 @@ import MainModal from './components/MainModal';
 import Navbar from './components/Navbar';
 
 import './App.css';
+import DocInterface from './components/DocInterface';
 
 const initialPatientsData = [
   {
@@ -52,6 +53,8 @@ const App = () => {
   const [patients, setPatients] = useState(initialPatientsData)
   const [timeAppointement, setTimeAppointement] = useState(0)
   const [anim,setAnim] = useState(false)
+  const [docInterface, setDocInterface] = useState(false)
+  const [timeAnim, setTimeAnim] = useState(false)
 
   const handleClick = () => {
     //remove patient #1
@@ -62,13 +65,31 @@ const App = () => {
     setTimeout(()=> setAnim(false), 3000)
   }
 
-  useEffect(() => {setInterval(() => {setTimeAppointement(timeAppointement + 1)}, 3000)}, [timeAppointement])
+  // useEffect(() => {setInterval(() => {setTimeAppointement(timeAppointement + 1)}, 3000)}, [timeAppointement])
+  //   setTimeAppointement(0)
+  
+
+  const showDocInterface = () => {
+    setDocInterface(true)
+  }
+
+  useEffect(() => {
+    let interval = null;
+    interval = setInterval(() => {
+      setTimeAppointement(timeAppointement => timeAppointement + 1)
+      setTimeAnim(true)
+      setTimeout(()=> setTimeAnim(false), 2000)
+      }, 3000);
+    return () => clearInterval(interval);
+  }, [timeAppointement]);
 
   return (
     <div className="App">
       <Navbar />
-      <MainModal patients={patients} timeAppointement={timeAppointement} anim={anim} />
-      <button onClick={handleClick}>Take a new patient</button>
+      <div className='App__container'>
+        <MainModal patients={patients} timeAppointement={timeAppointement} timeAnim={timeAnim} showDoc={showDocInterface} anim={anim}/>
+        <DocInterface patients={patients} newPatient={handleClick} docInterface={docInterface} />
+      </div>
     </div>
   );
 }

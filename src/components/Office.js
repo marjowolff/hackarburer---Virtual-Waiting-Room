@@ -1,12 +1,11 @@
 import React from 'react'
 
 import './Office.css'
-import Patient from './Patient'
 
 const Office = ({ patient,timeAppointement,anim }) => {
   return (
     <div className='Office'>
-      <p className='Office__anoucement'>Appointement has started {timeAppointement} minutes ago </p>
+      <p className='Office__anoucement'>Appointement has started {timeAppointement} minute<span style={timeAppointement<2? {display:'none'}:{display:'inline'}}>s</span> ago </p>
       <div className='Office__doctor'>
         <img className='Office__avatar' src='https://via.placeholder.com/60' alt='doctor avatar' />
         <div className='Office__doctor__info'>
@@ -17,7 +16,7 @@ const Office = ({ patient,timeAppointement,anim }) => {
       <div className= {anim===true ? 'Office__patient Office__patient__animation' : 'Office__patient'}>
         <img className='Office__avatar' src='https://via.placeholder.com/60'  alt='patient avatar' />
         <div className='Office__patient__info'>
-        {patient.name}
+          {patient.name}
         </div>
       </div>
     </div>
