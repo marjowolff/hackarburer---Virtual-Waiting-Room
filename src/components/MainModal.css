@@ -42,7 +42,7 @@
     border-radius: 5px;
     padding: 5px 10px;
     margin-left: 10px;
-    background-color: var(--main-yellow);
+    background-color: var(--light-grey);
     font-size: 20px;
     transition: .15s ease-in;
 }
