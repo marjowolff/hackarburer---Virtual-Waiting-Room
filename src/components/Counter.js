@@ -15,11 +15,13 @@ const Counter = ({time, nbrBefore, timeAnim}) => {
           <p>{nbrBefore}</p>
         </div>
       </div> 
-      <div className='Counter__time'>
+        <div className='Counter__time'>
         <p className='Counter__title'>Estimated waiting time</p>
         <div className='Counter__info'>
-          <img className='Counter__icon__clock' src={Time} alt='Clock'/>
-          <p className={`Counter__info__time ${timeAnim ? 'time-animation' : ''}`}>{time}'</p>
+          <img className='Counter__icon__clock' src={Time} alt='Clock'/>{
+            time >= 0 ? <p className={`Counter__info__time ${timeAnim ? 'time-animation' : ''}`}>{time}'</p> :
+            <p className={`Counter__info__time}`}>__'</p>
+          }
         </div>
       </div>
     </div>
