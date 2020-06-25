@@ -3,6 +3,7 @@ import Patient from './Patient'
 import './PatientList.css'
 import FlipMove from 'react-flip-move'; 
 
+
 const PatientList = ({patients}) => {
 
       return (<div className = "PatientList">
@@ -13,6 +14,7 @@ const PatientList = ({patients}) => {
           </div>)
          }  
       </FlipMove>
+      
       </div>)
     
 }
