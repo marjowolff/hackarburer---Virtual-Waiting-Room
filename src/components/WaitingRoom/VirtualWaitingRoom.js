@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 
-import MainModal from './MainModal'
-import DocInterface from './DocInterface'
-import initialPatientsData from './PatientsData'
+import MainModal from '../WaitingRoom/MainModal'
+import DocInterface from '../DoctorConsole/DocInterface'
+import initialPatientsData from '../Data/PatientsData'
 
 import './VirtualWaitingRoom.css'
 

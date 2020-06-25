@@ -1,7 +1,7 @@
 import React from 'react'
 
-import People from '../images/queue.png'
-import Time from '../images/clock.png'
+import People from '../../images/queue.png'
+import Time from '../../images/clock.png'
 
 import './Counter.css'
 

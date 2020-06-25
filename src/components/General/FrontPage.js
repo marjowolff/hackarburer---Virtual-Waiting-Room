@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './FrontPage.css'
-import './Office.css'
 
 const FrontPage = () => {
   return (
@@ -21,7 +20,7 @@ const FrontPage = () => {
         </div>
 
         <div className='FrontPage__doctor'>
-        <img className='FrontPage__doctor__avatar' src={require('../images/1.png')} alt='doctor avatar' />
+        <img className='FrontPage__doctor__avatar' src={require('../../images/1.png')} alt='doctor avatar' />
           <div className='FrontPage__doctor__info'>
             <h2>Dr Gregory House</h2>
             <p>Diagnostician</p>
@@ -38,7 +37,7 @@ const FrontPage = () => {
             </span>
           </button>
         </Link>
-        <img className='FrontPage__image' src={require('../images/frontpage.svg')} alt='Patient doctor illustration' />
+        <img className='FrontPage__image' src={require('../../images/frontpage.svg')} alt='Patient doctor illustration' />
       </div>
 
     </div >
