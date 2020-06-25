@@ -5,11 +5,7 @@ import DocPatientList from './DocPatientList'
 
 import './DocInterface.css'
 
-const DocInterface = ({newPatient, patients, docInterface, handleDelay}) => {
-    const [value, setValue] = useState(0)
-    const newValue = e => {
-        setValue(e.target.value)
-    }
+const DocInterface = ({newPatient, patients, docInterface, value, newValue, handleDelay}) => {
     return (
         <div className='DocInterface' style={ docInterface ? {display:'block'}:{display:'none'}}>
             <header className='DocInterface__header'>

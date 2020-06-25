@@ -54,6 +54,7 @@ const App = () => {
   const [timeAppointement, setTimeAppointement] = useState(0)
   const [docInterface, setDocInterface] = useState(false)
   const [timeAnim, setTimeAnim] = useState(false)
+  const [value, setValue] = useState(0)
   const [delay, setDelay] = useState(0)
 
   const handleClick = () => {
@@ -63,8 +64,13 @@ const App = () => {
     //setTimeAppointement to 0
     setTimeAppointement(0)
   }
+
+  const newValue = e => {
+    setValue(e.target.value)
+}
   const handleDelay = (e) => {
-    setDelay(e.target.value)
+    setDelay(parseInt(e.target.value))
+    setValue(0)
   }
 
   const showDocInterface = () => {
@@ -85,8 +91,8 @@ const App = () => {
     <div className="App">
       <Navbar />
       <div className='App__container'>
-        <MainModal patients={patients} timeAppointement={timeAppointement} timeAnim={timeAnim} showDoc={showDocInterface}/>
-        <DocInterface patients={patients} newPatient={handleClick} docInterface={docInterface} handleDelay={handleDelay} />
+        <MainModal patients={patients} timeAppointement={timeAppointement} delay={delay} timeAnim={timeAnim} showDoc={showDocInterface}/>
+        <DocInterface patients={patients} newPatient={handleClick} docInterface={docInterface} value={value} newValue={newValue} handleDelay={handleDelay} />
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ import PatientList from './PatientList';
 
 import './MainModal.css'
 
-const MainModal = ({ patients, timeAppointement, timeAnim, showDoc }) => {
+const MainModal = ({ patients, timeAppointement, delay, timeAnim, showDoc }) => {
   const [displayChatbot, setDisplayChatbot] = useState(false)
   const[leaving, setLeaving] = useState(false)
   
@@ -39,7 +39,7 @@ const MainModal = ({ patients, timeAppointement, timeAnim, showDoc }) => {
           <PatientList patients={patients} />
         </div>
         <div className='MainModal_container_right'>
-          <Counter patients={patients} timeAppointement={timeAppointement} timeAnim={timeAnim} />
+          <Counter patients={patients} timeAppointement={timeAppointement} delay={delay} timeAnim={timeAnim} />
           {displayChatbot ? <Chatbot /> : <ChatbotWelcomeMessage handleDisplayChatbot={handleDisplayChatbot} />}
         </div>
       </div>
