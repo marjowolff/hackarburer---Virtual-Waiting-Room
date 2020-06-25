@@ -7,6 +7,9 @@
   border-radius: 10px;
   color: black;
   box-shadow: 5px 5px 7px var(--main-grey);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .Counter__people {
