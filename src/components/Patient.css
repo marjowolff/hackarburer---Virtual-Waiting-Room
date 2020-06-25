@@ -9,12 +9,23 @@
 }
 
 .Patient__Name {
-  margin:10px;
+  margin: auto 10px auto 20px;
   color: white;
+}
+
+.Patient__Name__doctorconsole {
+  margin: auto 10px auto 10px;
+  color: var(--dark-grey);
+  font-size: 14px;
 }
 
 .Patient__Name__You {
   color : var(--main-yellow);
+  font-weight : bold;
+}
+
+.Patient__Name__You__doctorconsole {
+  color : var(--dark-grey);
   font-weight : bold;
 }
 

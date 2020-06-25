@@ -13,7 +13,7 @@ const DocInterface = ({ newPatient, patients, docInterface, getDelay, getValue, 
       </header>
       <main className='DocInterface__main'>
         <section className='DocInterface__left'>
-          <DocPatientList patients={patients} />
+          <DocPatientList classname="Patient__Name__waitingroom" patients={patients} />
         </section>
         <section className='DocInterface__right'>
           <div className='DocInterface__right__top'>
