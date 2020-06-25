@@ -54,8 +54,14 @@
 }
 
 .FrontPage__doctor__avatar {
-  width: 70px;
   margin-right: 1vw;
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  display: table-cell;
+  vertical-align: middle;
+  background-color: #ffffff;
+  object-fit: cover;
 }
 
 .FrontPage__doctor__info h3 {
