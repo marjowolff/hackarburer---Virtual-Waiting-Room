@@ -10,20 +10,20 @@ const Counter = ({patients, timeAppointement, timeAnim}) => {
 
   const idMe = patients.findIndex(patient => patient.status === 'you')
   const nbrBefore = patients.slice(0, idMe).length
-  
+
   return (
     <div className='Counter'>
       <div className='Counter__people'>
         <p className='Counter__title'>People before you</p>
         <div className='Counter__info'>
-          <img src={People} alt='Line of people'/>
+          <img className='Counter__icon__people' src={People} alt='Line of people'/>
           <p>{nbrBefore}</p>
         </div>
       </div>
       <div className='Counter__time'>
         <p className='Counter__title'>Estimated waiting time</p>
         <div className='Counter__info'>
-          <img src={Time} alt='Clock'/>
+          <img className='Counter__icon__clock' src={Time} alt='Clock' />
           <p className={`Counter__info__time ${timeAnim ? 'time-animation' : ''}`}>{time * nbrBefore - timeAppointement}'</p>
         </div>
       </div>

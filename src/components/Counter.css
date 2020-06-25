@@ -1,23 +1,23 @@
 .Counter{
   width: 100%;
   text-align: center;
-  padding: 10px;
+  padding: 15px 10px;
   border: 1px solid var(--light-grey);
   background-color: var(--light-grey);
   border-radius: 10px;
   color: black;
   box-shadow: 5px 5px 7px var(--main-grey);
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: space-between;
 }
 
-.Counter__people {
-  margin-bottom: 20px;
-}
+/* .Counter__people {
+  margin-bottom: 10px;
+} */
 
 .Counter__title {
-  font-size: 20px;
+  font-size: 1vw;
   margin-bottom: 15px;
 }
 
@@ -28,12 +28,19 @@
 }
 
 .Counter__info img {
-  width: 7%;
   margin-right: 10%;
 }
 
+.Counter__icon__people {
+  width: 12%;
+}
+
+.Counter__icon__clock {
+  width: 10%;
+}
+
 .Counter__info p {
-  font-size: 1.3vw;
+  font-size: 1.2vw;
   font-weight: bold;
 }
 
