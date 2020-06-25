@@ -25,7 +25,7 @@ const VirtualWaitingRoom = () => {
     //remove patient #1
     const tempPatients = [...patients].slice(1)
     setPatients(tempPatients)
-    //setTimeAppointement to 0
+    setTimeAppointement(0)
     setAnim(true)
     setTimeout(() => setAnim(false), 3000)
   }
@@ -53,8 +53,15 @@ const VirtualWaitingRoom = () => {
     return () => clearInterval(interval);
   }, [timeAppointement]);
 
-  useEffect(() => setNewTime(timeBase * nbrBefore ), [nbrBefore])
-  
+  useEffect(() => {
+    if (newTime > 0) {
+      let globalDelay = newTime - (timeBase * (nbrBefore + 1))
+      return setNewTime(timeBase * nbrBefore + globalDelay)
+    } else {
+      return setNewTime(timeBase * nbrBefore)
+    }
+  }, [nbrBefore])
+
   return (
     
     <div className='VirtualWaitingRoom'>
