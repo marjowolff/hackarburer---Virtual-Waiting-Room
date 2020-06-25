@@ -3,8 +3,8 @@ import { ThemeProvider } from 'styled-components'
 import ChatBot from 'react-simple-chatbot'
 import UserInfoView from './UserInfoView'
 
-const patientName = 'Titi'
-const doctorName = 'Dr.Stranger'
+const patientName = 'Ann O\'Nyme'
+const doctorName = 'Dr James White'
 
 const steps = [
   {

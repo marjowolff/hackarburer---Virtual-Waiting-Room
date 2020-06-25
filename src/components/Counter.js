@@ -14,7 +14,7 @@ const Counter = ({patients, timeAppointement, timeAnim}) => {
   return (
     <div className='Counter'>
       <div className='Counter__people'>
-        <p className='Counter__title'>Number of people in front of you</p>
+        <p className='Counter__title'>People before you</p>
         <div className='Counter__info'>
           <img src={People} alt='Line of people'/>
           <p>{nbrBefore}</p>

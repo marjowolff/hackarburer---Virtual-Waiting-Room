@@ -12,7 +12,7 @@
 .ChatbotWelcomeMessage__message {
   background-color: var(--main-orange);
   color: white;
-  border-radius: 10px 10px 0px 10px;
+  border-radius: 18px 18px 0px 18px;
   align-self: flex-start;
   width:85%;
   height: 120px;
