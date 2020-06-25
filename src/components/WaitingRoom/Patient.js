@@ -24,7 +24,7 @@ const Patient = (props) => {
             }}
           />
         </div>)
-        : <img className='Patient__Img' src={require(`../${props.pic}`)} alt='patient' />}
+        : <img className='Patient__Img' src={require(`../../${props.pic}`)} alt='patient' />}
       {props.status === 'you'
         ? <div className='Patient__Name Patient__Name__You'> {props.name}</div> : <div className='Patient__Name'> {props.name}</div>}
     </div>

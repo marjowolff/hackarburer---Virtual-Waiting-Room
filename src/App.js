@@ -1,8 +1,8 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import FrontPage from './components/FrontPage'
-import VirtualWaitingRoom from './components/VirtualWaitingRoom'
+import Navbar from './components/General/Navbar'
+import FrontPage from './components/General/FrontPage'
+import VirtualWaitingRoom from './components/WaitingRoom/VirtualWaitingRoom'
 
 import './App.css'
 

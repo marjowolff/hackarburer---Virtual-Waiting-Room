@@ -1,7 +1,7 @@
 import React from 'react';
+import FlipMove from 'react-flip-move'; 
 import DocPatient from './DocPatient'
 import './DocPatientList.css'
-import FlipMove from 'react-flip-move'; 
 
 const DocPatientList = ({patients}) => {
 
