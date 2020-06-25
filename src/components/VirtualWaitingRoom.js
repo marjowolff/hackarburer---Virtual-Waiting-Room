@@ -53,8 +53,16 @@ const VirtualWaitingRoom = () => {
     return () => clearInterval(interval);
   }, [timeAppointement]);
 
-  useEffect(() => setNewTime(timeBase * nbrBefore ), [nbrBefore])
-  
+  useEffect(() => {
+    if (newTime > 0) {
+      let globalDelay = newTime - (timeBase * (nbrBefore + 1))
+      return setNewTime(timeBase * nbrBefore + globalDelay)
+    } else {
+      return setNewTime(timeBase * nbrBefore)
+    }
+  }, [nbrBefore])
+
+  console.log(initialPatientsData)
   return (
     
     <div className='VirtualWaitingRoom'>
