@@ -54,6 +54,7 @@ const App = () => {
   const [timeAppointement, setTimeAppointement] = useState(0)
   const [docInterface, setDocInterface] = useState(false)
   const [timeAnim, setTimeAnim] = useState(false)
+  const [delay, setDelay] = useState(0)
 
   const handleClick = () => {
     //remove patient #1
@@ -61,6 +62,9 @@ const App = () => {
     setPatients(tempPatients)
     //setTimeAppointement to 0
     setTimeAppointement(0)
+  }
+  const handleDelay = (e) => {
+    setDelay(e.target.value)
   }
 
   const showDocInterface = () => {
@@ -82,7 +86,7 @@ const App = () => {
       <Navbar />
       <div className='App__container'>
         <MainModal patients={patients} timeAppointement={timeAppointement} timeAnim={timeAnim} showDoc={showDocInterface}/>
-        <DocInterface patients={patients} newPatient={handleClick} docInterface={docInterface} />
+        <DocInterface patients={patients} newPatient={handleClick} docInterface={docInterface} handleDelay={handleDelay} />
       </div>
     </div>
   );

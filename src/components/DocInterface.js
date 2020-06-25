@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import DocOfficePatient from './DocOfficePatient'
 import DocPatientList from './DocPatientList'
 
 import './DocInterface.css'
 
-const DocInterface = ({newPatient, patients, docInterface}) => {
+const DocInterface = ({newPatient, patients, docInterface, handleDelay}) => {
+    const [value, setValue] = useState(0)
+    const newValue = e => {
+        setValue(e.target.value)
+    }
     return (
         <div className='DocInterface' style={ docInterface ? {display:'block'}:{display:'none'}}>
             <header className='DocInterface__header'>
@@ -22,8 +26,10 @@ const DocInterface = ({newPatient, patients, docInterface}) => {
                     </div>
                     <div className='DocInterface__right__bottom'>
                         <p className='DocInterface__right__title'>Having some delay ?</p>
-                        <p className='DocInterface__right__title'>Inform your following patients you will be<input type='number'></input>minutes late.</p>
-                        <button className='DocInterface__send'>send</button>
+                        <p className='DocInterface__right__title'>Inform your following patients you will be
+                        <input type='number' value={value} onChange={newValue}></input>
+                        minutes late.</p>
+                        <button className='DocInterface__send' value={value} onClick={handleDelay}>send</button>
                     </div>
                     
                 </section>
