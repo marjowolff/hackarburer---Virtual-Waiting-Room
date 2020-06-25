@@ -6,7 +6,7 @@ import './Office.css'
 const FrontPage = () => {
   return (
     <div className='FrontPage'>
-      
+
       <div className='FrontPage__card'>
         <div className='FrontPage__head'>
           <p>Your appointment</p>
@@ -20,8 +20,8 @@ const FrontPage = () => {
           </span>
         </div>
 
-        <div className='Office__doctor'>
-          <img className='Office__avatar' src='https://via.placeholder.com/60' alt='doctor avatar' />
+        <div className='FrontPage__doctor'>
+        <img className='FrontPage__doctor__avatar' src={require('../images/1.png')} alt='doctor avatar' />
           <div className='FrontPage__doctor__info'>
             <h2>Dr James White</h2>
             <p>General practitioner</p>

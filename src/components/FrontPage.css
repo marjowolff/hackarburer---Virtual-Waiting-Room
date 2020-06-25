@@ -23,6 +23,8 @@
   background: #0596de;
   color: #fff;
   padding: 10px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 .FrontPage__head p {  
@@ -42,6 +44,18 @@
 
 .FrontPage__head span svg:nth-child(2) {
   margin: 0 5px 0 10px;
+}
+
+.FrontPage__doctor {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  padding: 10px;
+}
+
+.FrontPage__doctor__avatar {
+  width: 70px;
+  margin-right: 1vw;
 }
 
 .FrontPage__doctor__info h3 {
