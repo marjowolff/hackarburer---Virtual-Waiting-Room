@@ -1,18 +1,23 @@
+
+
 const initialPatientsData = [
   {
     id:1,
     name: 'Patient A',
-    status:'other'
+    status:'other',
+    pic: 'images/2.png'
   },
   {
     id:2,
     name: 'Patient B',
-    status:'other'
+    status:'other',
+    pic:'images/3.png'
   },
   {
     id:3,
     name: 'Patient C',
-    status:'other'
+    status:'other',
+    pic:'images/4.png'
   },
   {
     id:4,
@@ -22,22 +27,26 @@ const initialPatientsData = [
   {
     id:5,
     name: 'Patient E',
-    status:'other'
+    status:'other',
+    pic:'images/5.png'
   },
   {
     id:6,
     name: 'Patient F',
-    status:'other'
+    status:'other',
+    pic:'images/4.png'
   },
   {
     id:7,
     name: 'Patient G',
-    status:'other'
+    status:'other',
+    pic:'images/4.png'
   },
   {
     id:8,
     name: 'Patient H',
-    status:'other'
+    status:'other',
+    pic:'images/4.png'
   }
 ]
 

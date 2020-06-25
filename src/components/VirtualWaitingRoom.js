@@ -41,7 +41,9 @@ const VirtualWaitingRoom = () => {
     return () => clearInterval(interval);
   }, [timeAppointement]);
 
+  console.log(initialPatientsData)
   return (
+    
     <div className='VirtualWaitingRoom'>
       <MainModal patients={patients} timeAppointement={timeAppointement} timeAnim={timeAnim} showDoc={showDocInterface} anim={anim} />
       <DocInterface patients={patients} newPatient={handleClick} docInterface={docInterface} />

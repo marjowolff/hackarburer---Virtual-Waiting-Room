@@ -5,7 +5,6 @@ import ReactPlayer from 'react-player/youtube'
 
 
 const Patient = (props) => {
-
   return (
     <div className="Patient">
       {props.status === 'you' ? 
@@ -19,7 +18,7 @@ const Patient = (props) => {
     }
   }}/>
         </div>) 
-        : <img src='https://via.placeholder.com/60' />}
+        : <img className = 'Patient__Img' src={require(`../${props.pic}`)} />}
       {props.status === 'you' ?
       <div className="Patient__Name Patient__Name__You"> {props.name}</div> : <div className="Patient__Name"> {props.name}</div>}
     </div> 
