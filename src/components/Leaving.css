@@ -49,6 +49,10 @@
     transition: .1s ease-in;
 }
 
+.Leaving__container__actions button:focus {
+    outline: none;
+}
+
 .Leaving__container__actions button:hover {
     cursor: pointer;
     transform: scale(1.1);

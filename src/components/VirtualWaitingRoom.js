@@ -54,8 +54,7 @@ const VirtualWaitingRoom = () => {
   }, [timeAppointement]);
 
   useEffect(() => setNewTime(timeBase * nbrBefore ), [nbrBefore])
-
-  console.log(initialPatientsData)
+  
   return (
     
     <div className='VirtualWaitingRoom'>

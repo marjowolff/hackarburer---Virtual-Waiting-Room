@@ -47,6 +47,10 @@
     transition: .15s ease-in;
 }
 
+.MainModal__title button:focus {
+    outline: none;
+}
+
 .MainModal__title button:hover {
     cursor: pointer;
     color: #fff;

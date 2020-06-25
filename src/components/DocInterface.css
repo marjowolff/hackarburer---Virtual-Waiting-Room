@@ -32,14 +32,17 @@
 .DocInterface__next {
     background: var(--light-blue);
 }
+.DocInterface__next:focus, .DocInterface__right input:focus, .DocInterface__right button:focus {
+    outline: none;
+}
 
 .DocInterface__right input {
     width: 45px;
     height: 30px;
     margin: 0 3px;
     border: none;
-    font-size: 20px;
-    text-align: center;
+    font-size: 15px;
+    text-align: right;
     background-color: var(--light-grey);
 }
 
