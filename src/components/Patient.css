@@ -15,3 +15,8 @@
   color : var(--main-orange);
   font-weight : bold;
 }
+
+.Patient__PlayerWrapper {
+  height:60px;
+  width:90px;
+}
