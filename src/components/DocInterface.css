@@ -34,8 +34,13 @@
 }
 
 .DocInterface__right input {
-    width: 35px;
+    width: 45px;
+    height: 30px;
     margin: 0 3px;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    background-color: var(--light-grey);
 }
 
 .DocInterface__right button {

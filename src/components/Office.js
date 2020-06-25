@@ -7,7 +7,7 @@ const Office = ({ patient,timeAppointement,anim }) => {
 
   return (
     <div className='Office'>
-      <p className='Office__anoucement'>Appointement has started {timeAppointement} minute<span style={timeAppointement<2? {display:'none'}:{display:'inline'}}>s</span> ago </p>
+      <p className='Office__anoucement'>Appointment has started {timeAppointement} minute<span style={timeAppointement<2? {display:'none'}:{display:'inline'}}>s</span> ago </p>
       <div className='Office__doctor'>
         <img className='Office__avatar' src={require('../images/1.png')} alt='doctor avatar' />
         <div className='Office__doctor__info'>
