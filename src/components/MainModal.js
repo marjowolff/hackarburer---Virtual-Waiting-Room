@@ -8,7 +8,7 @@ import PatientList from './PatientList';
 
 import './MainModal.css'
 
-const MainModal = ({ patients, timeAppointement, delay, timeAnim, showDoc }) => {
+const MainModal = ({ patients, timeAppointement, timeAnim, showDoc, time, nbrBefore }) => {
   const [displayChatbot, setDisplayChatbot] = useState(false)
   const[leaving, setLeaving] = useState(false)
   
@@ -28,7 +28,7 @@ const MainModal = ({ patients, timeAppointement, delay, timeAnim, showDoc }) => 
           <h2 onClick={showDoc}>Virtual Waiting Room</h2>
         </div>
         <div className='MainModal__title__right'>
-          <p>Need to be somewhere else ?</p>
+          <p>Can't attend the appointment ?</p>
           <button onClick={showModal}>Leave</button>
         </div>
       </div>
@@ -39,7 +39,7 @@ const MainModal = ({ patients, timeAppointement, delay, timeAnim, showDoc }) => 
           <PatientList patients={patients} />
         </div>
         <div className='MainModal_container_right'>
-          <Counter patients={patients} timeAppointement={timeAppointement} delay={delay} timeAnim={timeAnim} />
+          <Counter time={time} nbrBefore={nbrBefore} timeAnim={timeAnim} />
           {displayChatbot ? <Chatbot /> : <ChatbotWelcomeMessage handleDisplayChatbot={handleDisplayChatbot} />}
         </div>
       </div>

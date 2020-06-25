@@ -48,14 +48,13 @@
     border-radius: 5px;
     padding: 5px 10px;
     margin-left: 10px;
-    background-color: var(--main-yellow);
+    background-color: var(--main-grey);
     font-size: 20px;
     transition: .15s ease-in;
 }
 
 .MainModal__title button:hover {
     cursor: pointer;
-    background-color: #94740a;
     color: #fff;
     font-weight: bold;
     transform: scale(1.1)

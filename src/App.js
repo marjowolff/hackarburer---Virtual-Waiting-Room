@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 
 import MainModal from './components/MainModal';
 import Navbar from './components/Navbar';
@@ -54,8 +54,13 @@ const App = () => {
   const [timeAppointement, setTimeAppointement] = useState(0)
   const [docInterface, setDocInterface] = useState(false)
   const [timeAnim, setTimeAnim] = useState(false)
-  const [value, setValue] = useState(0)
   const [delay, setDelay] = useState(0)
+  const [newTime, setNewTime] = useState(0)
+
+  const timeBase = 15
+
+  const idMe = patients.findIndex(patient => patient.status === 'you')
+  const nbrBefore = patients.slice(0, idMe).length
 
   const handleClick = () => {
     //remove patient #1
@@ -65,12 +70,13 @@ const App = () => {
     setTimeAppointement(0)
   }
 
-  const newValue = e => {
-    setValue(e.target.value)
-}
-  const handleDelay = (e) => {
+  const getValue = e => {
     setDelay(parseInt(e.target.value))
-    setValue(0)
+}
+
+  const getDelay = () => {
+    setNewTime(newTime + delay)
+    setDelay(0)
   }
 
   const showDocInterface = () => {
@@ -87,12 +93,14 @@ const App = () => {
     return () => clearInterval(interval);
   }, [timeAppointement]);
 
+  useEffect(() => setNewTime(timeBase * nbrBefore ), [nbrBefore])
+
   return (
     <div className="App">
       <Navbar />
       <div className='App__container'>
-        <MainModal patients={patients} timeAppointement={timeAppointement} delay={delay} timeAnim={timeAnim} showDoc={showDocInterface}/>
-        <DocInterface patients={patients} newPatient={handleClick} docInterface={docInterface} value={value} newValue={newValue} handleDelay={handleDelay} />
+        <MainModal patients={patients} timeAppointement={timeAppointement} delay={delay} timeAnim={timeAnim} showDoc={showDocInterface} nbrBefore={nbrBefore} time={newTime - timeAppointement}/>
+        <DocInterface patients={patients} newPatient={handleClick} docInterface={docInterface} getValue={getValue} getDelay={getDelay} delay={delay} />
       </div>
     </div>
   );
