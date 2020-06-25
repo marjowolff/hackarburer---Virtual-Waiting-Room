@@ -16,7 +16,7 @@ const MainModal = ({ patients, timeAppointement, timeAnim, showDoc, time, nbrBef
   const showModal = () => setLeaving(true)
   const hideModal = () => setLeaving(false)
 
-  const botAvatarUrl = require('../images/chatbot.svg') // Cf exmeple d'integration dans le chatbot: https://github.com/btotharye/cisco-pss-api-chatbot/blob/master/src/App.js
+  const botAvatarUrl = require('../images/chatbot.svg')
   const userAvatarUrl = require('../images/6.png')
 
   return (
@@ -34,13 +34,17 @@ const MainModal = ({ patients, timeAppointement, timeAnim, showDoc, time, nbrBef
 
       <div className='MainModal__container'>
         <div className='MainModal__container__left'>
-          <Office timeAppointement={timeAppointement} patient={patients[0]} anim={anim}/>
+          <Office timeAppointement={timeAppointement} patient={patients[0]} anim={anim} />
           <hr />
           <PatientList patients={patients} />
         </div>
+        
         <div className='MainModal__container__right'>
           <Counter time={time} nbrBefore={nbrBefore} timeAnim={timeAnim} />
-          {displayChatbot ? <Chatbot botAvatarUrl={botAvatarUrl} userAvatarUrl={userAvatarUrl} /> : <ChatbotWelcomeMessage handleDisplayChatbot={handleDisplayChatbot} botAvatarUrl={botAvatarUrl} />}
+          {displayChatbot
+            ? <Chatbot botAvatarUrl={botAvatarUrl} userAvatarUrl={userAvatarUrl} />
+            : <ChatbotWelcomeMessage handleDisplayChatbot={handleDisplayChatbot} botAvatarUrl={botAvatarUrl} />
+          }
         </div>
       </div>
       <Leaving leaving={leaving} hide={hideModal} />
