@@ -11,8 +11,8 @@ const Office = ({ patient,timeAppointement,anim }) => {
       <div className='Office__doctor'>
         <img className='Office__avatar' src={require('../images/1.png')} alt='doctor avatar' />
         <div className='Office__doctor__info'>
-          <h2>Dr James White</h2>
-          <p>General practitioner</p>
+          <h2>Dr Gregory House </h2>
+          <p>Diagnostician</p>
         </div>
       </div>
       <div className= {anim===true ? 'Office__patient Office__patient__animation' : 'Office__patient'}>

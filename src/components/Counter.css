@@ -6,7 +6,6 @@
   background-color: var(--light-grey);
   border-radius: 10px;
   color: black;
-  box-shadow: 5px 5px 7px var(--main-grey);
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;

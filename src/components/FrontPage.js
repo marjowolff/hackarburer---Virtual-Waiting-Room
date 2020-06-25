@@ -23,8 +23,8 @@ const FrontPage = () => {
         <div className='FrontPage__doctor'>
         <img className='FrontPage__doctor__avatar' src={require('../images/1.png')} alt='doctor avatar' />
           <div className='FrontPage__doctor__info'>
-            <h2>Dr James White</h2>
-            <p>General practitioner</p>
+            <h2>Dr Gregory House</h2>
+            <p>Diagnostician</p>
           </div>
         </div>
       </div>
@@ -38,7 +38,7 @@ const FrontPage = () => {
             </span>
           </button>
         </Link>
-        <img className='FrontPage__image' src='https://www.doctolib.fr/webpack/dbc7e3783faf0a118a3f116f8cd78059.svg' alt='Patient doctor illustration' />
+        <img className='FrontPage__image' src={require('../images/frontpage.svg')} alt='Patient doctor illustration' />
       </div>
 
     </div >

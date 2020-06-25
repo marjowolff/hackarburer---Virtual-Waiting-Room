@@ -84,6 +84,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .MainModal__container__left hr {
@@ -94,4 +96,15 @@
 
 .MainModal__container__right {
     width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* chatbot */
+.fLjYpL {
+    height: 480px !important;
+}
+
+.ffjfJJ {
+    height: 350px !important;
 }
