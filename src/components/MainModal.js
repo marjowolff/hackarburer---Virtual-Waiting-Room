@@ -21,6 +21,7 @@ const MainModal = ({ patients, timeAppointement, timeAnim, showDoc, time, nbrBef
 
   return (
     <div className='MainModal'>
+      <div className='MainModal__veil'></div>
       <div className='MainModal__title'>
         <div className='MainModal__title__left'>
           <img src={require('../images/logo.png')} alt='waiting_room_logo' />
