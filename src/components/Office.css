@@ -9,7 +9,7 @@
 
 .Office__anoucement {
   margin: 0 10px 0 10px;
-  font-size: 1.2em;
+  font-size: 1em;
   font-style: italic;
   color: var(--main-grey)
 }
@@ -21,6 +21,7 @@
 .Office__doctor {
   display: flex;
   align-items: center;
+  width: 90%;
 }
 
 .Office__doctor__info h2 {
@@ -41,12 +42,10 @@
 }
 
 .Office__patient {
-  padding:10px;
   display:flex ;
   flex-direction : row;
   border-radius: 10px;
   width: 90%;
-  margin: 10px auto;
 }
 
 .Office__patient__info {
@@ -57,8 +56,6 @@
   animation-name: example;
   animation-duration: 2s;
   animation-iteration-count: 1;
-  /* transform: scale(1.5);
-  animation-duration : 10s; */
 }
 @keyframes example {
   0%   {background-color:var(--light-grey); left:0px; top:0px;}

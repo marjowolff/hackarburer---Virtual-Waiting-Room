@@ -36,6 +36,7 @@ const MainModal = ({ patients, timeAppointement, timeAnim, showDoc,anim }) => {
       <div className='MainModal__container'>
         <div className='MainModal__container__left'>
           <Office timeAppointement={timeAppointement} patient={patients[0]} anim={anim}/>
+          <hr />
           <PatientList patients={patients} />
         </div>
         <div className='MainModal__container__right'>

@@ -73,6 +73,12 @@
     justify-content: space-between;
 }
 
+.MainModal__container__left hr {
+    width: 80%;
+    margin: auto;
+    border-bottom: 1px solid var(--light-blue);
+}
+
 .MainModal__container__right {
     width: 50%;
 }

@@ -16,7 +16,7 @@ const initialPatientsData = [
   },
   {
     id:4,
-    name: 'You',
+    name: 'Ann O\'Nyme',
     status:'you'
   },
   {
