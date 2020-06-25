@@ -23,8 +23,8 @@ const FrontPage = () => {
         <div className='FrontPage__doctor'>
         <img className='FrontPage__doctor__avatar' src={require('../images/1.png')} alt='doctor avatar' />
           <div className='FrontPage__doctor__info'>
-            <h2>Dr James White</h2>
-            <p>General practitioner</p>
+            <h2>Dr Gregory House</h2>
+            <p>Diagnostician</p>
           </div>
         </div>
       </div>
