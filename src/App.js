@@ -16,7 +16,7 @@ const App = () => {
       <Navbar />
         <Switch>
           <Route exact path="/" component={FrontPage} />
-          <Route path="/watingroom" component={VirtualWaitingRoom} />
+          <Route path="/waitingroom" component={VirtualWaitingRoom} />
         </Switch>
     </div>
   );
