@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
         <nav className='Navbar'>
             <img src={require('../images/doctolib-logo.png')} alt='doctolib-logo'/>
-            <p>Name of the Patient</p>
+            <p>Ann O'Nyme</p>
         </nav>
     )
 }

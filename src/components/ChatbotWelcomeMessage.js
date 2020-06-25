@@ -6,7 +6,7 @@ const ChatbotWelcomeMessage = ({ handleDisplayChatbot, botAvatarUrl }) => {
     <div className='ChatbotWelcomeMessage'>
       <div className='ChatbotWelcomeMessage__container'>
         <div className='ChatbotWelcomeMessage__message'>
-          <p>Welcome You, <br /> You will be notified as soon as the doctor joins the video consultation.</p>
+          <p>Welcome Ann O'Nyme, <br /> You will be notified as soon as the doctor joins the video consultation.</p>
           <button className='ChatbotWelcomeMessage__validationButton' onClick={handleDisplayChatbot}>Ok</button>
         </div>
         <img className='ChatbotWelcomeMessage__avatar' src={botAvatarUrl} alt='chatbot avatar' />

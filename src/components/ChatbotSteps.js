@@ -1,8 +1,8 @@
 import React from 'react'
 import UserInfoView from './UserInfoView'
 
-const patientName = 'Titi'
-const doctorName = 'Dr.Stranger'
+const patientName = 'Ann O\'Nyme'
+const doctorName = 'Dr James White'
 
 export const steps = [
   {

@@ -8,10 +8,13 @@
   src : url('./Fonts/Roboto/Roboto-Regular.ttf')
 }
 
-body {
-  margin: 0;
-  padding : 0;
+* {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
   --main-blue : #0596DE;
   --hover-blue : #39ABE5;
   --light-blue : #03B8E0;
@@ -30,5 +33,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 
 /* color : var(--main-blue) */
