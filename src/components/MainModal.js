@@ -11,8 +11,12 @@ import './MainModal.css'
 const MainModal = ({ patients, timeAppointement, timeAnim, showDoc, time, nbrBefore, anim }) => {
   const [displayChatbot, setDisplayChatbot] = useState(false)
   const [leaving, setLeaving] = useState(false)
+  const [veil, setVeil] =useState(true)
 
-  const handleDisplayChatbot = () => setDisplayChatbot(true)
+  const handleDisplayChatbot = () => {
+    setDisplayChatbot(true)
+    setVeil(false)
+  }
   const showModal = () => setLeaving(true)
   const hideModal = () => setLeaving(false)
 
@@ -21,6 +25,7 @@ const MainModal = ({ patients, timeAppointement, timeAnim, showDoc, time, nbrBef
 
   return (
     <div className='MainModal'>
+      <div className='MainModal__veil' style={veil ?{display:'block'}:{display:'none'}}></div>
       <div className='MainModal__title'>
         <div className='MainModal__title__left'>
           <img src={require('../images/logo.png')} alt='waiting_room_logo' />
