@@ -20,7 +20,7 @@ const FrontPage = () => {
         </div>
 
         <div className='FrontPage__doctor'>
-        <img className='FrontPage__doctor__avatar' src={require('../../images/1.png')} alt='doctor avatar' />
+          <img className='FrontPage__doctor__avatar' src={require('../../images/doctor-house.jpg')} alt='doctor avatar' />
           <div className='FrontPage__doctor__info'>
             <h2>Dr Gregory House</h2>
             <p>Diagnostician</p>
