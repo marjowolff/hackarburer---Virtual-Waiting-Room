@@ -16,8 +16,8 @@ const MainModal = ({ patients, timeAppointement, timeAnim, showDoc, time, nbrBef
   const showModal = () => setLeaving(true)
   const hideModal = () => setLeaving(false)
 
-  const botAvatarUrl = 'images/chatbot.svg' // Cf exmeple d'integration dans le chatbot: https://github.com/btotharye/cisco-pss-api-chatbot/blob/master/src/App.js
-  const userAvatarUrl = 'images/6.png'
+  const botAvatarUrl = require('../images/chatbot.svg') // Cf exmeple d'integration dans le chatbot: https://github.com/btotharye/cisco-pss-api-chatbot/blob/master/src/App.js
+  const userAvatarUrl = require('../images/6.png')
 
   return (
     <div className='MainModal'>
