@@ -1,11 +1,10 @@
 .Office {
-  border: 2px solid var(--main-blue);
-  border-radius: 10px;
-  height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  height: 35%;
+  padding: 10px;
 }
 
 .Office__anoucement {
@@ -42,14 +41,12 @@
 }
 
 .Office__patient {
-  width:90%;
   padding:10px;
-  margin:5px;
   display:flex ;
   flex-direction : row;
   border-radius: 10px;
-  border: 1px solid var(--main-grey);
-  background-color :  var(--light-grey)
+  width: 90%;
+  margin: 10px auto;
 }
 
 .Office__patient__info {

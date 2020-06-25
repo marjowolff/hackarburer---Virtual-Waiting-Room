@@ -38,7 +38,7 @@ const MainModal = ({ patients, timeAppointement, timeAnim, showDoc,anim }) => {
           <Office timeAppointement={timeAppointement} patient={patients[0]} anim={anim}/>
           <PatientList patients={patients} />
         </div>
-        <div className='MainModal_container_right'>
+        <div className='MainModal__container__right'>
           <Counter patients={patients} timeAppointement={timeAppointement} timeAnim={timeAnim} />
           {displayChatbot ? <Chatbot /> : <ChatbotWelcomeMessage handleDisplayChatbot={handleDisplayChatbot} />}
         </div>
