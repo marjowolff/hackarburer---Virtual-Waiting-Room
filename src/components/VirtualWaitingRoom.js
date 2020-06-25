@@ -25,7 +25,7 @@ const VirtualWaitingRoom = () => {
     //remove patient #1
     const tempPatients = [...patients].slice(1)
     setPatients(tempPatients)
-    //setTimeAppointement to 0
+    setTimeAppointement(0)
     setAnim(true)
     setTimeout(() => setAnim(false), 3000)
   }
