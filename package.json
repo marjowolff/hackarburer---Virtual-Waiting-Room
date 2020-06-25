@@ -13,7 +13,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-simple-chatbot": "^0.6.1",
-    "styled-components": "^5.1.1"
+    "styled-components": "^5.1.1",
+    "video-react": "^0.14.1"
   },
   "scripts": {
     "start": "react-scripts start",
