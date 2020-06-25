@@ -1,7 +1,9 @@
 .PatientList {
-  margin:20px;
   padding:10px;
-  border-radius: 10px;
+  height: 65%;
+  /* border-radius: 10px;
   border : 1px solid var(--main-blue);
-  background-color :  var(--dark-grey)
+  background-color :  var(--dark-grey) */
 }
+
+

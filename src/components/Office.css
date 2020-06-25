@@ -1,18 +1,17 @@
 .Office {
-  border: 2px solid var(--main-blue);
-  border-radius: 10px;
-  height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  height: 35%;
+  padding: 10px;
 }
 
 .Office__anoucement {
   margin: 0 10px 0 10px;
-  font-size: 1.2em;
+  font-size: 1em;
   font-style: italic;
-  color: var(--main-grey)
+  color: var(--dark-grey)
 }
 
 .Office__avatar {
@@ -22,6 +21,7 @@
 .Office__doctor {
   display: flex;
   align-items: center;
+  width: 90%;
 }
 
 .Office__doctor__info h2 {
@@ -42,16 +42,23 @@
 }
 
 .Office__patient {
-  width:90%;
-  padding:10px;
-  margin:5px;
   display:flex ;
   flex-direction : row;
   border-radius: 10px;
-  border: 1px solid var(--main-grey);
-  background-color :  var(--light-grey)
+  width: 90%;
 }
 
 .Office__patient__info {
   margin:10px;
+}
+
+.Office__patient__animation {
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+@keyframes example {
+  0%   {background-color:var(--light-grey); left:0px; top:0px;}
+  50%  {background-color:var(--main-yellow); left:200px; top:200px;}
+  100% {background-color:var(--light-grey); left:0px; top:0px;}
 }
