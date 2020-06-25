@@ -18,6 +18,16 @@
   width: 70px;
 }
 
+.Office__avatar__doctor {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  display: table-cell;
+  vertical-align: middle;
+  background-color: #ffffff;
+  object-fit: cover;
+}
+
 .Office__doctor {
   display: flex;
   align-items: center;
