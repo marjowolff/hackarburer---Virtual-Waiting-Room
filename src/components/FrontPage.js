@@ -38,7 +38,7 @@ const FrontPage = () => {
             </span>
           </button>
         </Link>
-        <img className='FrontPage__image' src='/images/frontpage.svg' alt='Patient doctor illustration' />
+        <img className='FrontPage__image' src={require('../images/frontpage.svg')} alt='Patient doctor illustration' />
       </div>
 
     </div >
