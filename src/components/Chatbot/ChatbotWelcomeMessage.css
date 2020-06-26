@@ -14,7 +14,7 @@
 .ChatbotWelcomeMessage__message {
   background-color: var(--main-orange);
   color: white;
-  border-radius: 18px 18px 0px 18px;
+  border-radius: 18px 18px 18px 18px;
   align-self: flex-start;
   width:85%;
   height: 120px;
@@ -22,7 +22,23 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  padding: 0 4%;
+  padding: 8% 6%;
+  position: relative;
+}
+
+.ChatbotWelcomeMessage__message:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 85%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: var(--main-orange);
+	border-bottom: 0;
+	border-right: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
 }
 
 .ChatbotWelcomeMessage__validationButton {
