@@ -29,7 +29,7 @@ const UserInfoView = props => {
         <p className='UserInfoView__field'>Phone</p>
         <p className='UserInfoView__value'>{number}</p>
 
-        <p className='UserInfoView__field'>Birthday</p>
+        <p className='UserInfoView__field'>Date of birth</p>
         <p className='UserInfoView__value'>{birthday}</p>
 
         <p className='UserInfoView__field'>Address</p>
