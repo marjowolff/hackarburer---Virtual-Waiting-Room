@@ -13,7 +13,7 @@ export const steps = [
   },
   {
     id: '1',
-    message: 'While you wait, why not take some time to provide us with some information ?',
+    message: `Would you like to take some time to provide us some information ?`,
     trigger: 'followup'
   },
   {
@@ -27,7 +27,6 @@ export const steps = [
     options: [
       { value: 1, label: '1 - Personal information', trigger: '4' },
       { value: 2, label: '2 - Preliminary questions', trigger: '5' }
-      // { value: 3, label: '3 Read', trigger: '8' },
     ]
   },
   {
@@ -48,7 +47,7 @@ export const steps = [
   },
   {
     id: 'update',
-    message: 'Would you like to update some field?',
+    message: 'Would you like to update some fields?',
     trigger: 'update-question'
   },
   {
@@ -60,7 +59,7 @@ export const steps = [
   },
   {
     id: 'update-yes',
-    message: 'What field would you like to update?',
+    message: 'What information would you like to update?',
     trigger: 'update-fields'
   },
   {
@@ -68,7 +67,7 @@ export const steps = [
     options: [
       { value: 'number', label: 'Phone Number', trigger: 'update-number' },
       { value: 'address', label: 'Home address', trigger: 'update-address' },
-      { value: 'birthday', label: 'Birthday', trigger: 'update-birthday' }
+      { value: 'birthday', label: 'Date of birth', trigger: 'update-birthday' }
     ]
   },
   {
@@ -93,7 +92,7 @@ export const steps = [
   },
   {
     id: 'update-birthday',
-    message: 'What is your updated birthday?',
+    message: 'What is your date of birth?',
     trigger: 'birthday'
   },
   {
@@ -145,7 +144,7 @@ export const steps = [
   },
   {
     id: '8',
-    message: 'Thank you ! All your answers would be considered carefully by the doctor',
+    message: 'Thank you ! All your answers will be considered carefully by the doctor',
     trigger: '9'
   },
   {
