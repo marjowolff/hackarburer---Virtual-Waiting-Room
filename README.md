@@ -1,6 +1,6 @@
 # Virtual Waiting Room by team Hackarburer
 
-**1st winner of Hackathon with Doctolib, Dataiku and Wild Code School**
+### 1st winner of Hackathon with Doctolib, Dataiku and Wild Code School
 
 The **Virtual Waiting Room** is a front-end web application developed on June 24th/26th 2020 during a 48h remote hackathon with ** Doctolib, Dataiky ** and [Wild Code School](https://www.wildcodeschool.com/en-GB) on the topic of remote healthcare.
 
