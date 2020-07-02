@@ -2,11 +2,12 @@
 
 ### 1st winner of Hackathon with Doctolib, Dataiku and Wild Code School
 
-The **Virtual Waiting Room** is a front-end web application developed on June 24th/26th 2020 during a 48h remote hackathon with ** Doctolib, Dataiky ** and [Wild Code School](https://www.wildcodeschool.com/en-GB) on the topic of remote healthcare.
-
 <div style="display:flex; justify-content:space-around; margin:30px 0;">
 <img src="/public/img/0.png" alt="winner" style="width:180px heigth:auto"/>
 </div>
+
+The **Virtual Waiting Room** is a front-end web application developed on June 24th - 26th 2020 during a 48h remote hackathon with **Doctolib, Dataiky** and [Wild Code School](https://www.wildcodeschool.com/en-GB) on the topic of remote healthcare.
+
 
 ## The team
 
@@ -30,7 +31,7 @@ It is a **white-label web application** that will address all the stakeholders i
 <img src="/public/img/2.png" alt="mvc model" style="width:200px heigth:auto"/>
 </div>
 
-The objectives are
+#### The objectives are
 * improve the user experience as the patient will be reassured and more inclined to stay connected. 
 * boost the practitioner's productivity as his work will be refocused in only one interface.
 * take advantage of the patient's waiting time to collect and qualify his personal and medical data in a highly secure way.
@@ -56,21 +57,21 @@ The objectives are
 
 #### Virtual waiting room
 
- - - a virtual queue which shows user's turn among the patients and user's webcam 
- - - the first counter recalls how many people are scheduled before the user
- - - the second counter is an estimated wating time which calculates wating time
- - - a chatbot confirming personal information and asking basic check up questions
+ - a virtual queue which shows user's turn among the patients and user's webcam 
+ - the first counter recalls how many people are scheduled before the user
+ - the second counter is an estimated wating time which calculates wating time
+ - a chatbot confirming personal information and asking basic check up questions
 
 <img src="/public/img/8.png" alt="virtual waiting room" style="width:200px heigth:auto"/>
 
 #### Doctor's dashboard
- - - the practitioner can welcome a new patient
- - - inform a potential delay to all patients 
+ - the practitioner can welcome a new patient
+ - inform a potential delay to all patients 
  
 <img src="/public/img/9.png" alt="virtual doctor's console" style="width:90px heigth:auto"/>
 
 #### Dialog box
- - - in case of leaving before the consultation, let patient inform the reason to the doctor
+ - in case of leaving before the consultation, let patient inform the reason to the doctor
 
 <img src="/public/img/10.png" alt="leaving popup" style="width:200px heigth:auto"/>
 
