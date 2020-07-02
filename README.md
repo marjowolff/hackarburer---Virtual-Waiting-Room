@@ -44,22 +44,33 @@ The objectives are
 * CSS3
 
 ## Features and Screenshots
+
 * Transition page
+
 <img src="/public/img/4.png" alt="transition page" style="width:200px heigth:auto"/>
+
 * A message from welcoming bot confirms that the patient will be noticed when his turn comes
+
 <img src="/public/img/5.png" alt="chat bot welcome message" style="width:200px heigth:auto"/>
+
 * Virtual waiting room
+
  - a virtual queue which shows user's turn among the patients and user's webcam 
  - the first counter recalls how many people are scheduled before the user
  - the second counter is an estimated wating time which calculates wating time
  - a chatbot confirming personal information and asking basic check up questions
+
 <img src="/public/img/8.png" alt="virtual waiting room" style="width:200px heigth:auto"/>
+
 * Doctor's dashboard
  - the practitioner can welcome a new patient
  - inform a potential delay to all patients 
+ 
 <img src="/public/img/9.png" alt="virtual doctor's console" style="width:90px heigth:auto"/>
+
 * Dialog box
  - in case of leaving before the consultation, let patient inform the reason to the doctor
+ 
 <img src="/public/img/10.png" alt="leaving popup" style="width:200px heigth:auto"/>
 
 ## Next step
