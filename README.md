@@ -6,7 +6,7 @@
 <img src="/public/img/0.png" alt="winner" style="width:180px heigth:auto"/>
 </div>
 
-The **Virtual Waiting Room** is a front-end web application developed on June 24th - 26th 2020 during a 48h remote hackathon with **Doctolib, Dataiky** and [Wild Code School](https://www.wildcodeschool.com/en-GB) on the topic of remote healthcare.
+The **Virtual Waiting Room** is a front-end web application developed on June 24th - 26th 2020 during a 48h remote hackathon with **Doctolib, Dataiku** and [Wild Code School](https://www.wildcodeschool.com/en-GB) on the topic of remote healthcare.
 
 
 ## The team
@@ -59,7 +59,7 @@ It is a **white-label web application** that will address all the stakeholders i
 
  - a virtual queue which shows user's turn among the patients and user's webcam 
  - the first counter recalls how many people are scheduled before the user
- - the second counter is an estimated wating time which calculates wating time
+ - the second counter is an estimated waiting time which calculates waiting time
  - a chatbot confirming personal information and asking basic check up questions
 
 <img src="/public/img/8.png" alt="virtual waiting room" style="width:200px heigth:auto"/>
