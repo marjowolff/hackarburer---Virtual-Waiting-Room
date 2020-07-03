@@ -1,68 +1,87 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Virtual Waiting Room by team Hackarburer
 
-## Available Scripts
+### 1st winner of Hackathon with Doctolib, Dataiku and Wild Code School
 
-In the project directory, you can run:
+<div style="display:flex; justify-content:space-around; margin:30px 0;">
+<img src="/public/img/0.png" alt="winner" style="width:180px heigth:auto"/>
+</div>
 
-### `npm start`
+The **Virtual Waiting Room** is a front-end web application developed on June 24th - 26th 2020 during a 48h remote hackathon with **Doctolib, Dataiku** and [Wild Code School](https://www.wildcodeschool.com/en-GB) on the topic of remote healthcare.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## The team
 
-### `npm test`
+<div style="display:flex; justify-content:space-around; margin:30px 0;">
+<img src="/public/img/3.png" alt="team" style="width:200px heigth:auto"/>
+</div>
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Claire Kodia [Github](https://github.com/clrko') - [LinkedIn](https://www.linkedin.com/in/clairekodia/)
+* Emily Deat [Github](https://github.com/EmilyDEAT) - [LinkedIn](https://www.linkedin.com/in/emily-deat/)
+* Lena Hailin Sim [Github](https://github.com/Lenasim) - [LinkedIn](https://www.linkedin.com/in/lena-hailin-sim/)
+* Julien Rousseau [Github](https://github.com/julienrousseau16) - [LinkedIn](https://www.linkedin.com/in/julienrousseau-webdev/)
+* Marjolaine Baratte [Github](https://github.com/marjowolff) - [LinkedIn](https://www.linkedin.com/in/marjolainebaratte/)
 
-### `npm run build`
+## The project
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+We decided to design a **virtual assistant for medical practitioners** which helps managing waiting time during a **tele consultation**. 
+It is a **white-label web application** that will address all the stakeholders in the teleconsultation market while meeting the interoperability standards. 
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+<div style="display:flex; justify-content:space-around; margin:30px 0;">
+<img src="/public/img/1.png" alt="purpose" style="width:200px heigth:auto"/>
+<img src="/public/img/2.png" alt="mvc model" style="width:200px heigth:auto"/>
+</div>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### The objectives are
+* improve the user experience as the patient will be reassured and more inclined to stay connected. 
+* boost the practitioner's productivity as his work will be refocused in only one interface.
+* take advantage of the patient's waiting time to collect and qualify his personal and medical data in a highly secure way.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Technologies
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* React.js (Hooks)
+* JavaScript
+* HTML5
+* CSS3
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Features and Screenshots
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### Transition page
 
-## Learn More
+<img src="/public/img/4.png" alt="transition page" style="width:200px heigth:auto"/>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Welcoming message
+*  A message from welcoming bot confirms that the patient will be noticed when his turn comes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<img src="/public/img/5.png" alt="chat bot welcome message" style="width:200px heigth:auto"/>
 
-### Code Splitting
+#### Virtual waiting room
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+ - a virtual queue which shows user's turn among the patients and user's webcam 
+ - the first counter recalls how many people are scheduled before the user
+ - the second counter is an estimated waiting time which calculates waiting time
+ - a chatbot confirming personal information and asking basic check up questions
 
-### Analyzing the Bundle Size
+<img src="/public/img/8.png" alt="virtual waiting room" style="width:200px heigth:auto"/>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+#### Doctor's dashboard
+ - the practitioner can welcome a new patient
+ - inform a potential delay to all patients 
+ 
+<img src="/public/img/9.png" alt="virtual doctor's console" style="width:90px heigth:auto"/>
 
-### Making a Progressive Web App
+#### Dialog box
+ - in case of leaving before the consultation, let patient inform the reason to the doctor
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+<img src="/public/img/10.png" alt="leaving popup" style="width:200px heigth:auto"/>
 
-### Advanced Configuration
+## Next step
+* 'Waiting time' supervised by Machine Learning
+* Highly Customizable pre-interview questions & smart chatbot
+* Reglementary and informational display in the waiting room
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## In the project directory, you can run:
+* `npm install`
+* `npm start`
 
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+These commands install the dependencies and start the app in the developement mode.
